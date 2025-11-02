@@ -176,40 +176,40 @@ class MOFModelTrainer:
                               id_col: str = "filename"):
         """
         Save model predictions for the FULL dataset (train + test).
-
-        Automatically excludes non-feature columns (like filename) 
-        before applying scaler/model, then restores them afterward.
+        Automatically matches sampler indexing (reset-based) and excludes non-feature columns.
         """
 
-        # --- Identify columns used in training ---
-        trained_features = None
+        # ---- Align index with sampler (important!) ----
+        X_full = X_full.reset_index(drop=True)
+        y_full = y_full.reset_index(drop=True)
+
+        # ---- Identify trained feature names ----
         if self.scaler_X and hasattr(self.scaler_X, "feature_names_in_"):
             trained_features = list(self.scaler_X.feature_names_in_)
         else:
             trained_features = list(X_full.columns.difference([id_col]))
 
-        # --- Predict only on valid features ---
         X_pred_input = X_full[trained_features].copy()
         y_pred_full = self.predict(X_pred_input)
 
-        # --- Construct result DataFrame ---
+        # ---- Build output DataFrame ----
         df_out = X_full.copy()
         df_out["y_true"] = y_full.values
         df_out["y_pred"] = y_pred_full
-
-        # --- Split info ---
         df_out["Split"] = "Unknown"
-        df_out.loc[train_idx, "Split"] = "Train"
-        df_out.loc[test_idx, "Split"] = "Test"
 
-        # --- Ensure id_col is first ---
+        # ---- Safely assign split info ----
+        df_out.loc[np.array(train_idx, dtype=int), "Split"] = "Train"
+        df_out.loc[np.array(test_idx, dtype=int), "Split"] = "Test"
+
+        # ---- Reorder id_col first ----
         if id_col in df_out.columns:
             cols = [id_col] + [c for c in df_out.columns if c != id_col]
             df_out = df_out[cols]
         else:
             self.logger.warning(f"[WARN] id_col '{id_col}' not found in X_full")
 
-        # --- Save file ---
+        # ---- Save CSV ----
         if self.outdir:
             os.makedirs(self.outdir, exist_ok=True)
             out_path = os.path.join(self.outdir, "predictions_full.csv")
@@ -217,4 +217,3 @@ class MOFModelTrainer:
             self.logger.info(f"[SAVE] full predictions → {out_path}")
 
         return df_out
-

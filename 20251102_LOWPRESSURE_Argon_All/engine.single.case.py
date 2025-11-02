@@ -126,7 +126,8 @@ def run_single_case(args):
         "learning_rate": 0.05,
         "loss_function": "RMSE",
         "random_seed": args.seed,
-        "verbose": False
+        "verbose": False,
+         "thread_count": 4
     }
 
     trainer = MOFModelTrainer(
