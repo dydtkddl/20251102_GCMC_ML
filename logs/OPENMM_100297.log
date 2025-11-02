@@ -1,0 +1,1266 @@
+📂 CSV 로드 완료: ./313K_merged_dataset.exclude.broken_cif.csv (7,639행)
+🧹 결측치 제거: 476개 행 삭제 (7163개 남음)
+
+📊 [요약]
+입력 피처: 12개
+저압 피처: 1개
+예측 피처: 0개
+출력 피처: 1개
+유효 샘플: 7,163/7,639
+
+🔍 [샘플 데이터]
+                           filename       LCD  ...      0.01        15
+0                      ACOCOM_clean  24.60642  ...  0.003168  4.372880
+1                      ACOCUS_clean  24.38417  ...  0.003187  4.483099
+2                      ACODAZ_clean  23.29182  ...  0.003023  4.438173
+3    acscombsci.5b00188_34903_clean   6.15808  ...  0.012559  3.523950
+4  acscombsci.5b00188_5013797_clean   9.69678  ...  0.002685  3.340983
+
+[5 rows x 15 columns]
+✅ Dataset 준비 완료 → 입력 13개, 출력 1개
+✅ Loaded dataset: 7163 rows (0.01 → 15)
+🎯 Initial labeled=71, unlabeled=7092
+
+🌀 Iter 00 | labeled=71 / 5730
+🧠 Training 71 samples ...
+[Epoch 000] Train=0.995376 | Val=0.718029
+[Epoch 020] Train=0.018668 | Val=0.018344
+[Epoch 040] Train=0.007278 | Val=0.006359
+[Epoch 060] Train=0.004400 | Val=0.003802
+[Epoch 080] Train=0.003573 | Val=0.003714
+[Epoch 100] Train=0.003896 | Val=0.003631
+[Epoch 120] Train=0.003558 | Val=0.003102
+[Epoch 140] Train=0.004818 | Val=0.005126
+📈 Uncertainty stats → mean=0.01424, std=0.00692, selected_mean=0.05842, zscore=6.38
+   🔍 R2=0.8854 | MAE=0.2155 | RMSE=0.3754
+
+🌀 Iter 01 | labeled=101 / 5730
+🧠 Training 101 samples ...
+[Epoch 000] Train=0.811443 | Val=0.033061
+[Epoch 020] Train=0.008006 | Val=0.006952
+[Epoch 040] Train=0.006151 | Val=0.004797
+[Epoch 060] Train=0.005840 | Val=0.003416
+[Epoch 080] Train=0.003056 | Val=0.003346
+[Epoch 100] Train=0.004838 | Val=0.002962
+[Epoch 120] Train=0.004345 | Val=0.003011
+[Epoch 140] Train=0.003210 | Val=0.002808
+[Epoch 160] Train=0.003426 | Val=0.002730
+[Epoch 180] Train=0.003423 | Val=0.002537
+[Epoch 200] Train=0.003155 | Val=0.002397
+[Epoch 220] Train=0.002694 | Val=0.002342
+[Epoch 240] Train=0.003069 | Val=0.002636
+[Epoch 260] Train=0.002966 | Val=0.002325
+[Epoch 280] Train=0.002708 | Val=0.002099
+[Epoch 300] Train=0.002519 | Val=0.002238
+[Epoch 320] Train=0.002528 | Val=0.001986
+[Epoch 340] Train=0.002197 | Val=0.002307
+[Epoch 360] Train=0.003185 | Val=0.001766
+[Epoch 380] Train=0.002426 | Val=0.002235
+[Epoch 399] Train=0.002541 | Val=0.001748
+📈 Uncertainty stats → mean=0.01501, std=0.00380, selected_mean=0.03042, zscore=4.05
+   🔍 R2=0.8822 | MAE=0.2218 | RMSE=0.3773
+
+🌀 Iter 02 | labeled=131 / 5730
+🧠 Training 131 samples ...
+[Epoch 000] Train=0.022100 | Val=0.011528
+[Epoch 020] Train=0.009462 | Val=0.009216
+[Epoch 040] Train=0.005317 | Val=0.004097
+[Epoch 060] Train=0.005106 | Val=0.005086
+[Epoch 080] Train=0.009472 | Val=0.016487
+[Epoch 100] Train=0.005200 | Val=0.005426
+📈 Uncertainty stats → mean=0.01350, std=0.00318, selected_mean=0.02482, zscore=3.56
+   🔍 R2=0.9327 | MAE=0.1925 | RMSE=0.2836
+
+🌀 Iter 03 | labeled=161 / 5730
+🧠 Training 161 samples ...
+[Epoch 000] Train=0.013652 | Val=0.009687
+[Epoch 020] Train=0.004415 | Val=0.004289
+[Epoch 040] Train=0.004615 | Val=0.003734
+[Epoch 060] Train=0.003864 | Val=0.003762
+[Epoch 080] Train=0.004518 | Val=0.003486
+[Epoch 100] Train=0.003652 | Val=0.003331
+[Epoch 120] Train=0.003397 | Val=0.003158
+[Epoch 140] Train=0.003389 | Val=0.003066
+[Epoch 160] Train=0.003495 | Val=0.002818
+[Epoch 180] Train=0.003049 | Val=0.002717
+[Epoch 200] Train=0.002951 | Val=0.002632
+[Epoch 220] Train=0.003332 | Val=0.002459
+[Epoch 240] Train=0.002940 | Val=0.002389
+[Epoch 260] Train=0.002518 | Val=0.002397
+[Epoch 280] Train=0.002571 | Val=0.002198
+[Epoch 300] Train=0.002578 | Val=0.002069
+[Epoch 320] Train=0.002600 | Val=0.001946
+[Epoch 340] Train=0.002541 | Val=0.002639
+[Epoch 360] Train=0.005365 | Val=0.003672
+[Epoch 380] Train=0.002764 | Val=0.001936
+[Epoch 399] Train=0.002304 | Val=0.001954
+📈 Uncertainty stats → mean=0.01455, std=0.00456, selected_mean=0.03968, zscore=5.52
+   🔍 R2=0.9122 | MAE=0.2114 | RMSE=0.3231
+
+🌀 Iter 04 | labeled=191 / 5730
+🧠 Training 191 samples ...
+[Epoch 000] Train=0.012551 | Val=0.010574
+[Epoch 020] Train=0.005105 | Val=0.004566
+[Epoch 040] Train=0.004660 | Val=0.003941
+[Epoch 060] Train=0.003720 | Val=0.003404
+[Epoch 080] Train=0.003594 | Val=0.002982
+[Epoch 100] Train=0.003125 | Val=0.002693
+[Epoch 120] Train=0.002815 | Val=0.002533
+[Epoch 140] Train=0.002992 | Val=0.002215
+[Epoch 160] Train=0.002627 | Val=0.002071
+[Epoch 180] Train=0.002681 | Val=0.002041
+[Epoch 200] Train=0.002249 | Val=0.001827
+[Epoch 220] Train=0.002510 | Val=0.001831
+[Epoch 240] Train=0.002098 | Val=0.001654
+[Epoch 260] Train=0.002061 | Val=0.001613
+[Epoch 280] Train=0.001995 | Val=0.001455
+[Epoch 300] Train=0.002232 | Val=0.001383
+[Epoch 320] Train=0.001832 | Val=0.001488
+[Epoch 340] Train=0.001791 | Val=0.001277
+[Epoch 360] Train=0.001455 | Val=0.001239
+[Epoch 380] Train=0.001654 | Val=0.001248
+[Epoch 399] Train=0.001583 | Val=0.001165
+📈 Uncertainty stats → mean=0.01597, std=0.00572, selected_mean=0.04597, zscore=5.24
+   🔍 R2=0.9060 | MAE=0.2197 | RMSE=0.3340
+
+🌀 Iter 05 | labeled=221 / 5730
+🧠 Training 221 samples ...
+[Epoch 000] Train=0.010349 | Val=0.006741
+[Epoch 020] Train=0.003194 | Val=0.002745
+[Epoch 040] Train=0.003221 | Val=0.002625
+[Epoch 060] Train=0.002598 | Val=0.002237
+[Epoch 080] Train=0.002143 | Val=0.001637
+[Epoch 100] Train=0.001825 | Val=0.001775
+[Epoch 120] Train=0.002013 | Val=0.001397
+[Epoch 140] Train=0.001685 | Val=0.001281
+[Epoch 160] Train=0.001805 | Val=0.001287
+[Epoch 180] Train=0.001663 | Val=0.001042
+[Epoch 200] Train=0.001662 | Val=0.000911
+[Epoch 220] Train=0.001559 | Val=0.001198
+[Epoch 240] Train=0.001335 | Val=0.001017
+[Epoch 260] Train=0.001475 | Val=0.001127
+[Epoch 280] Train=0.001323 | Val=0.000818
+[Epoch 300] Train=0.001145 | Val=0.001170
+📈 Uncertainty stats → mean=0.01606, std=0.00625, selected_mean=0.04212, zscore=4.17
+   🔍 R2=0.9201 | MAE=0.2086 | RMSE=0.3074
+
+🌀 Iter 06 | labeled=251 / 5730
+🧠 Training 251 samples ...
+[Epoch 000] Train=0.003108 | Val=0.002037
+[Epoch 020] Train=0.001567 | Val=0.000901
+[Epoch 040] Train=0.001397 | Val=0.000662
+[Epoch 060] Train=0.001184 | Val=0.000826
+[Epoch 080] Train=0.000936 | Val=0.000590
+[Epoch 100] Train=0.001249 | Val=0.000595
+[Epoch 120] Train=0.000856 | Val=0.000442
+📈 Uncertainty stats → mean=0.01536, std=0.00631, selected_mean=0.04440, zscore=4.60
+   🔍 R2=0.9137 | MAE=0.2083 | RMSE=0.3195
+
+🌀 Iter 07 | labeled=281 / 5730
+🧠 Training 281 samples ...
+[Epoch 000] Train=0.006831 | Val=0.003954
+[Epoch 020] Train=0.001799 | Val=0.001361
+[Epoch 040] Train=0.001547 | Val=0.001215
+[Epoch 060] Train=0.001698 | Val=0.001260
+[Epoch 080] Train=0.001682 | Val=0.000878
+[Epoch 100] Train=0.001305 | Val=0.000860
+[Epoch 120] Train=0.001817 | Val=0.001018
+[Epoch 140] Train=0.001096 | Val=0.000904
+[Epoch 160] Train=0.001263 | Val=0.001226
+[Epoch 180] Train=0.001114 | Val=0.000603
+[Epoch 200] Train=0.001303 | Val=0.000903
+[Epoch 220] Train=0.000928 | Val=0.000519
+[Epoch 240] Train=0.001071 | Val=0.000752
+[Epoch 260] Train=0.000652 | Val=0.000420
+[Epoch 280] Train=0.000685 | Val=0.000450
+📈 Uncertainty stats → mean=0.01325, std=0.00530, selected_mean=0.03297, zscore=3.72
+   🔍 R2=0.9221 | MAE=0.2037 | RMSE=0.3021
+
+🌀 Iter 08 | labeled=311 / 5730
+🧠 Training 311 samples ...
+[Epoch 000] Train=0.004985 | Val=0.003091
+[Epoch 020] Train=0.001545 | Val=0.001382
+[Epoch 040] Train=0.001288 | Val=0.000807
+[Epoch 060] Train=0.001122 | Val=0.000991
+[Epoch 080] Train=0.001172 | Val=0.000853
+[Epoch 100] Train=0.000989 | Val=0.000587
+[Epoch 120] Train=0.001001 | Val=0.000588
+[Epoch 140] Train=0.000800 | Val=0.000344
+[Epoch 160] Train=0.000812 | Val=0.000484
+📈 Uncertainty stats → mean=0.01357, std=0.00562, selected_mean=0.03605, zscore=4.00
+   🔍 R2=0.9279 | MAE=0.1966 | RMSE=0.2904
+
+🌀 Iter 09 | labeled=341 / 5730
+🧠 Training 341 samples ...
+[Epoch 000] Train=0.002788 | Val=0.002589
+[Epoch 020] Train=0.001495 | Val=0.001139
+[Epoch 040] Train=0.005195 | Val=0.002333
+[Epoch 060] Train=0.001489 | Val=0.001191
+[Epoch 080] Train=0.000880 | Val=0.000611
+[Epoch 100] Train=0.001150 | Val=0.000758
+[Epoch 120] Train=0.000763 | Val=0.000417
+[Epoch 140] Train=0.000889 | Val=0.000603
+[Epoch 160] Train=0.000941 | Val=0.000627
+[Epoch 180] Train=0.001013 | Val=0.000806
+[Epoch 200] Train=0.000704 | Val=0.000392
+📈 Uncertainty stats → mean=0.01328, std=0.00545, selected_mean=0.03204, zscore=3.44
+   🔍 R2=0.9338 | MAE=0.1886 | RMSE=0.2777
+
+🌀 Iter 10 | labeled=371 / 5730
+🧠 Training 371 samples ...
+[Epoch 000] Train=0.002879 | Val=0.002247
+[Epoch 020] Train=0.001226 | Val=0.000594
+[Epoch 040] Train=0.001089 | Val=0.000920
+[Epoch 060] Train=0.001008 | Val=0.000712
+[Epoch 080] Train=0.000786 | Val=0.000508
+[Epoch 100] Train=0.000820 | Val=0.000354
+[Epoch 120] Train=0.000813 | Val=0.000514
+📈 Uncertainty stats → mean=0.01328, std=0.00559, selected_mean=0.03369, zscore=3.65
+   🔍 R2=0.9384 | MAE=0.1837 | RMSE=0.2681
+
+🌀 Iter 11 | labeled=401 / 5730
+🧠 Training 401 samples ...
+[Epoch 000] Train=0.004933 | Val=0.003090
+[Epoch 020] Train=0.001232 | Val=0.000700
+[Epoch 040] Train=0.001017 | Val=0.000635
+[Epoch 060] Train=0.001035 | Val=0.000416
+[Epoch 080] Train=0.000941 | Val=0.000684
+[Epoch 100] Train=0.000796 | Val=0.000430
+[Epoch 120] Train=0.001433 | Val=0.001385
+📈 Uncertainty stats → mean=0.01267, std=0.00508, selected_mean=0.03217, zscore=3.84
+   🔍 R2=0.9373 | MAE=0.1864 | RMSE=0.2702
+
+🌀 Iter 12 | labeled=431 / 5730
+🧠 Training 431 samples ...
+[Epoch 000] Train=0.002439 | Val=0.001493
+[Epoch 020] Train=0.000907 | Val=0.000716
+[Epoch 040] Train=0.000757 | Val=0.000729
+[Epoch 060] Train=0.000701 | Val=0.000371
+[Epoch 080] Train=0.000574 | Val=0.000220
+[Epoch 100] Train=0.000553 | Val=0.000333
+📈 Uncertainty stats → mean=0.01248, std=0.00509, selected_mean=0.03040, zscore=3.52
+   🔍 R2=0.9416 | MAE=0.1800 | RMSE=0.2608
+
+🌀 Iter 13 | labeled=461 / 5730
+🧠 Training 461 samples ...
+[Epoch 000] Train=0.002801 | Val=0.001985
+[Epoch 020] Train=0.001399 | Val=0.000694
+[Epoch 040] Train=0.000786 | Val=0.000445
+[Epoch 060] Train=0.000700 | Val=0.000394
+[Epoch 080] Train=0.001011 | Val=0.000706
+[Epoch 100] Train=0.000774 | Val=0.000427
+[Epoch 120] Train=0.000939 | Val=0.000723
+📈 Uncertainty stats → mean=0.01221, std=0.00477, selected_mean=0.03101, zscore=3.94
+   🔍 R2=0.9447 | MAE=0.1744 | RMSE=0.2540
+
+🌀 Iter 14 | labeled=491 / 5730
+🧠 Training 491 samples ...
+[Epoch 000] Train=0.003605 | Val=0.001956
+[Epoch 020] Train=0.000930 | Val=0.000617
+[Epoch 040] Train=0.000581 | Val=0.000394
+[Epoch 060] Train=0.000661 | Val=0.000297
+[Epoch 080] Train=0.000607 | Val=0.000270
+[Epoch 100] Train=0.000660 | Val=0.000389
+📈 Uncertainty stats → mean=0.01179, std=0.00466, selected_mean=0.02981, zscore=3.87
+   🔍 R2=0.9460 | MAE=0.1722 | RMSE=0.2508
+
+🌀 Iter 15 | labeled=521 / 5730
+🧠 Training 521 samples ...
+[Epoch 000] Train=0.002219 | Val=0.001883
+[Epoch 020] Train=0.001192 | Val=0.000558
+[Epoch 040] Train=0.001365 | Val=0.000768
+[Epoch 060] Train=0.000698 | Val=0.000533
+[Epoch 080] Train=0.000516 | Val=0.000291
+[Epoch 100] Train=0.000514 | Val=0.000310
+[Epoch 120] Train=0.000732 | Val=0.000374
+📈 Uncertainty stats → mean=0.01130, std=0.00417, selected_mean=0.02731, zscore=3.84
+   🔍 R2=0.9489 | MAE=0.1672 | RMSE=0.2434
+
+🌀 Iter 16 | labeled=551 / 5730
+🧠 Training 551 samples ...
+[Epoch 000] Train=0.001238 | Val=0.000716
+[Epoch 020] Train=0.000678 | Val=0.000291
+[Epoch 040] Train=0.000493 | Val=0.000339
+[Epoch 060] Train=0.000575 | Val=0.000403
+📈 Uncertainty stats → mean=0.01153, std=0.00433, selected_mean=0.02691, zscore=3.55
+   🔍 R2=0.9488 | MAE=0.1680 | RMSE=0.2436
+
+🌀 Iter 17 | labeled=581 / 5730
+🧠 Training 581 samples ...
+[Epoch 000] Train=0.001448 | Val=0.000981
+[Epoch 020] Train=0.003587 | Val=0.001493
+[Epoch 040] Train=0.000885 | Val=0.000440
+[Epoch 060] Train=0.000596 | Val=0.000259
+[Epoch 080] Train=0.000581 | Val=0.000318
+[Epoch 100] Train=0.000584 | Val=0.000291
+📈 Uncertainty stats → mean=0.01214, std=0.00429, selected_mean=0.02825, zscore=3.75
+   🔍 R2=0.9491 | MAE=0.1712 | RMSE=0.2430
+
+🌀 Iter 18 | labeled=611 / 5730
+🧠 Training 611 samples ...
+[Epoch 000] Train=0.001798 | Val=0.000977
+[Epoch 020] Train=0.000678 | Val=0.000326
+[Epoch 040] Train=0.000482 | Val=0.000238
+[Epoch 060] Train=0.000526 | Val=0.000255
+[Epoch 080] Train=0.000533 | Val=0.000179
+[Epoch 100] Train=0.000688 | Val=0.000254
+[Epoch 120] Train=0.000409 | Val=0.000194
+[Epoch 140] Train=0.000487 | Val=0.000368
+📈 Uncertainty stats → mean=0.01117, std=0.00414, selected_mean=0.02742, zscore=3.93
+   🔍 R2=0.9531 | MAE=0.1616 | RMSE=0.2331
+
+🌀 Iter 19 | labeled=641 / 5730
+🧠 Training 641 samples ...
+[Epoch 000] Train=0.001484 | Val=0.003559
+[Epoch 020] Train=0.001677 | Val=0.000902
+[Epoch 040] Train=0.003512 | Val=0.002445
+📈 Uncertainty stats → mean=0.01410, std=0.00534, selected_mean=0.03752, zscore=4.39
+   🔍 R2=0.9504 | MAE=0.1716 | RMSE=0.2394
+
+🌀 Iter 20 | labeled=671 / 5730
+🧠 Training 671 samples ...
+[Epoch 000] Train=0.005875 | Val=0.004034
+[Epoch 020] Train=0.000864 | Val=0.000454
+[Epoch 040] Train=0.000690 | Val=0.000307
+[Epoch 060] Train=0.000584 | Val=0.000310
+[Epoch 080] Train=0.000687 | Val=0.000237
+[Epoch 100] Train=0.000545 | Val=0.000238
+📈 Uncertainty stats → mean=0.01213, std=0.00444, selected_mean=0.02873, zscore=3.74
+   🔍 R2=0.9537 | MAE=0.1607 | RMSE=0.2310
+
+🌀 Iter 21 | labeled=701 / 5730
+🧠 Training 701 samples ...
+[Epoch 000] Train=0.001598 | Val=0.000903
+[Epoch 020] Train=0.000678 | Val=0.000308
+[Epoch 040] Train=0.000588 | Val=0.000267
+[Epoch 060] Train=0.000523 | Val=0.000227
+[Epoch 080] Train=0.000537 | Val=0.000192
+📈 Uncertainty stats → mean=0.01158, std=0.00431, selected_mean=0.02848, zscore=3.92
+   🔍 R2=0.9552 | MAE=0.1575 | RMSE=0.2271
+
+🌀 Iter 22 | labeled=731 / 5730
+🧠 Training 731 samples ...
+[Epoch 000] Train=0.001381 | Val=0.001032
+[Epoch 020] Train=0.000658 | Val=0.000360
+[Epoch 040] Train=0.000681 | Val=0.000372
+[Epoch 060] Train=0.000590 | Val=0.000309
+[Epoch 080] Train=0.000603 | Val=0.000271
+[Epoch 100] Train=0.000578 | Val=0.000298
+📈 Uncertainty stats → mean=0.01138, std=0.00421, selected_mean=0.02655, zscore=3.60
+   🔍 R2=0.9558 | MAE=0.1556 | RMSE=0.2257
+
+🌀 Iter 23 | labeled=761 / 5730
+🧠 Training 761 samples ...
+[Epoch 000] Train=0.000954 | Val=0.000547
+[Epoch 020] Train=0.000515 | Val=0.000224
+[Epoch 040] Train=0.000562 | Val=0.000448
+📈 Uncertainty stats → mean=0.01112, std=0.00416, selected_mean=0.02720, zscore=3.86
+   🔍 R2=0.9576 | MAE=0.1515 | RMSE=0.2210
+
+🌀 Iter 24 | labeled=791 / 5730
+🧠 Training 791 samples ...
+[Epoch 000] Train=0.001210 | Val=0.000696
+[Epoch 020] Train=0.000800 | Val=0.000470
+[Epoch 040] Train=0.000561 | Val=0.000417
+[Epoch 060] Train=0.000500 | Val=0.000175
+[Epoch 080] Train=0.000884 | Val=0.000694
+📈 Uncertainty stats → mean=0.01086, std=0.00409, selected_mean=0.02599, zscore=3.70
+   🔍 R2=0.9579 | MAE=0.1525 | RMSE=0.2202
+
+🌀 Iter 25 | labeled=821 / 5730
+🧠 Training 821 samples ...
+[Epoch 000] Train=0.000948 | Val=0.000499
+[Epoch 020] Train=0.000582 | Val=0.000302
+[Epoch 040] Train=0.000514 | Val=0.000209
+[Epoch 060] Train=0.000523 | Val=0.000255
+📈 Uncertainty stats → mean=0.01059, std=0.00401, selected_mean=0.02497, zscore=3.59
+   🔍 R2=0.9581 | MAE=0.1526 | RMSE=0.2199
+
+🌀 Iter 26 | labeled=851 / 5730
+🧠 Training 851 samples ...
+[Epoch 000] Train=0.000811 | Val=0.000413
+[Epoch 020] Train=0.000507 | Val=0.000255
+[Epoch 040] Train=0.000563 | Val=0.000301
+[Epoch 060] Train=0.000483 | Val=0.000237
+📈 Uncertainty stats → mean=0.01075, std=0.00404, selected_mean=0.02528, zscore=3.60
+   🔍 R2=0.9575 | MAE=0.1502 | RMSE=0.2215
+
+🌀 Iter 27 | labeled=881 / 5730
+🧠 Training 881 samples ...
+[Epoch 000] Train=0.000727 | Val=0.000370
+[Epoch 020] Train=0.000446 | Val=0.000263
+[Epoch 040] Train=0.000458 | Val=0.000285
+[Epoch 060] Train=0.000423 | Val=0.000243
+📈 Uncertainty stats → mean=0.01022, std=0.00375, selected_mean=0.02309, zscore=3.44
+   🔍 R2=0.9582 | MAE=0.1486 | RMSE=0.2196
+
+🌀 Iter 28 | labeled=911 / 5730
+🧠 Training 911 samples ...
+[Epoch 000] Train=0.001170 | Val=0.000676
+[Epoch 020] Train=0.000586 | Val=0.000455
+[Epoch 040] Train=0.000493 | Val=0.000276
+[Epoch 060] Train=0.000411 | Val=0.000198
+[Epoch 080] Train=0.000426 | Val=0.000160
+[Epoch 100] Train=0.000427 | Val=0.000239
+📈 Uncertainty stats → mean=0.01016, std=0.00376, selected_mean=0.02374, zscore=3.61
+   🔍 R2=0.9583 | MAE=0.1475 | RMSE=0.2194
+
+🌀 Iter 29 | labeled=941 / 5730
+🧠 Training 941 samples ...
+[Epoch 000] Train=0.001255 | Val=0.000567
+[Epoch 020] Train=0.000409 | Val=0.000188
+[Epoch 040] Train=0.000477 | Val=0.000215
+📈 Uncertainty stats → mean=0.00982, std=0.00363, selected_mean=0.02249, zscore=3.49
+   🔍 R2=0.9590 | MAE=0.1484 | RMSE=0.2177
+
+🌀 Iter 30 | labeled=971 / 5730
+🧠 Training 971 samples ...
+[Epoch 000] Train=0.000791 | Val=0.000557
+[Epoch 020] Train=0.000388 | Val=0.000201
+[Epoch 040] Train=0.000529 | Val=0.000382
+[Epoch 060] Train=0.000501 | Val=0.000246
+[Epoch 080] Train=0.000348 | Val=0.000151
+[Epoch 100] Train=0.000404 | Val=0.000225
+📈 Uncertainty stats → mean=0.00956, std=0.00342, selected_mean=0.02172, zscore=3.56
+   🔍 R2=0.9605 | MAE=0.1454 | RMSE=0.2137
+
+🌀 Iter 31 | labeled=1001 / 5730
+🧠 Training 1001 samples ...
+[Epoch 000] Train=0.001013 | Val=0.000731
+[Epoch 020] Train=0.000404 | Val=0.000216
+[Epoch 040] Train=0.000355 | Val=0.000146
+[Epoch 060] Train=0.000374 | Val=0.000205
+[Epoch 080] Train=0.000556 | Val=0.000253
+📈 Uncertainty stats → mean=0.00965, std=0.00376, selected_mean=0.02581, zscore=4.30
+   🔍 R2=0.9614 | MAE=0.1433 | RMSE=0.2112
+
+🌀 Iter 32 | labeled=1031 / 5730
+🧠 Training 1031 samples ...
+[Epoch 000] Train=0.000765 | Val=0.000672
+[Epoch 020] Train=0.000745 | Val=0.000335
+[Epoch 040] Train=0.000611 | Val=0.000400
+[Epoch 060] Train=0.000547 | Val=0.000235
+[Epoch 080] Train=0.000368 | Val=0.000312
+[Epoch 100] Train=0.000376 | Val=0.000199
+[Epoch 120] Train=0.000352 | Val=0.000145
+[Epoch 140] Train=0.000436 | Val=0.000242
+[Epoch 160] Train=0.000511 | Val=0.000233
+📈 Uncertainty stats → mean=0.00945, std=0.00349, selected_mean=0.02276, zscore=3.81
+   🔍 R2=0.9616 | MAE=0.1416 | RMSE=0.2104
+
+🌀 Iter 33 | labeled=1061 / 5730
+🧠 Training 1061 samples ...
+[Epoch 000] Train=0.000835 | Val=0.000510
+[Epoch 020] Train=0.000397 | Val=0.000212
+[Epoch 040] Train=0.000420 | Val=0.000212
+📈 Uncertainty stats → mean=0.00973, std=0.00363, selected_mean=0.02392, zscore=3.91
+   🔍 R2=0.9646 | MAE=0.1383 | RMSE=0.2021
+
+🌀 Iter 34 | labeled=1091 / 5730
+🧠 Training 1091 samples ...
+[Epoch 000] Train=0.000732 | Val=0.000523
+[Epoch 020] Train=0.000732 | Val=0.000479
+[Epoch 040] Train=0.000625 | Val=0.000345
+[Epoch 060] Train=0.000728 | Val=0.000395
+📈 Uncertainty stats → mean=0.01004, std=0.00369, selected_mean=0.02388, zscore=3.75
+   🔍 R2=0.9636 | MAE=0.1380 | RMSE=0.2049
+
+🌀 Iter 35 | labeled=1121 / 5730
+🧠 Training 1121 samples ...
+[Epoch 000] Train=0.000813 | Val=0.000452
+[Epoch 020] Train=0.000476 | Val=0.000202
+[Epoch 040] Train=0.000466 | Val=0.000226
+[Epoch 060] Train=0.000446 | Val=0.000235
+[Epoch 080] Train=0.000337 | Val=0.000210
+📈 Uncertainty stats → mean=0.00967, std=0.00352, selected_mean=0.02416, zscore=4.12
+   🔍 R2=0.9647 | MAE=0.1372 | RMSE=0.2017
+
+🌀 Iter 36 | labeled=1151 / 5730
+🧠 Training 1151 samples ...
+[Epoch 000] Train=0.000698 | Val=0.000327
+[Epoch 020] Train=0.000483 | Val=0.000277
+[Epoch 040] Train=0.000421 | Val=0.000237
+📈 Uncertainty stats → mean=0.00953, std=0.00350, selected_mean=0.02185, zscore=3.52
+   🔍 R2=0.9649 | MAE=0.1363 | RMSE=0.2011
+
+🌀 Iter 37 | labeled=1181 / 5730
+🧠 Training 1181 samples ...
+[Epoch 000] Train=0.000705 | Val=0.000353
+[Epoch 020] Train=0.000448 | Val=0.000261
+[Epoch 040] Train=0.000363 | Val=0.000162
+[Epoch 060] Train=0.000476 | Val=0.000360
+📈 Uncertainty stats → mean=0.00943, std=0.00348, selected_mean=0.02370, zscore=4.10
+   🔍 R2=0.9651 | MAE=0.1374 | RMSE=0.2008
+
+🌀 Iter 38 | labeled=1211 / 5730
+🧠 Training 1211 samples ...
+[Epoch 000] Train=0.000618 | Val=0.000301
+[Epoch 020] Train=0.000416 | Val=0.000294
+[Epoch 040] Train=0.000415 | Val=0.000273
+📈 Uncertainty stats → mean=0.00936, std=0.00343, selected_mean=0.02282, zscore=3.92
+   🔍 R2=0.9657 | MAE=0.1344 | RMSE=0.1990
+
+🌀 Iter 39 | labeled=1241 / 5730
+🧠 Training 1241 samples ...
+[Epoch 000] Train=0.000618 | Val=0.000290
+[Epoch 020] Train=0.000425 | Val=0.000224
+[Epoch 040] Train=0.000395 | Val=0.000160
+[Epoch 060] Train=0.000331 | Val=0.000153
+[Epoch 080] Train=0.000410 | Val=0.000216
+[Epoch 100] Train=0.000311 | Val=0.000257
+[Epoch 120] Train=0.000470 | Val=0.000214
+[Epoch 140] Train=0.000314 | Val=0.000124
+[Epoch 160] Train=0.000307 | Val=0.000185
+[Epoch 180] Train=0.000426 | Val=0.000206
+[Epoch 200] Train=0.000249 | Val=0.000150
+[Epoch 220] Train=0.000422 | Val=0.000249
+📈 Uncertainty stats → mean=0.00920, std=0.00348, selected_mean=0.02241, zscore=3.79
+   🔍 R2=0.9661 | MAE=0.1349 | RMSE=0.1980
+
+🌀 Iter 40 | labeled=1271 / 5730
+🧠 Training 1271 samples ...
+[Epoch 000] Train=0.000693 | Val=0.000323
+[Epoch 020] Train=0.000257 | Val=0.000171
+[Epoch 040] Train=0.000283 | Val=0.000166
+[Epoch 060] Train=0.000355 | Val=0.000168
+📈 Uncertainty stats → mean=0.00925, std=0.00332, selected_mean=0.02188, zscore=3.80
+   🔍 R2=0.9658 | MAE=0.1337 | RMSE=0.1988
+
+🌀 Iter 41 | labeled=1301 / 5730
+🧠 Training 1301 samples ...
+[Epoch 000] Train=0.000542 | Val=0.000330
+[Epoch 020] Train=0.000350 | Val=0.000154
+[Epoch 040] Train=0.000281 | Val=0.000218
+📈 Uncertainty stats → mean=0.00926, std=0.00330, selected_mean=0.02144, zscore=3.69
+   🔍 R2=0.9677 | MAE=0.1323 | RMSE=0.1931
+
+🌀 Iter 42 | labeled=1331 / 5730
+🧠 Training 1331 samples ...
+[Epoch 000] Train=0.000453 | Val=0.000303
+[Epoch 020] Train=0.000313 | Val=0.000194
+[Epoch 040] Train=0.000348 | Val=0.000192
+📈 Uncertainty stats → mean=0.00930, std=0.00335, selected_mean=0.02264, zscore=3.98
+   🔍 R2=0.9666 | MAE=0.1327 | RMSE=0.1965
+
+🌀 Iter 43 | labeled=1361 / 5730
+🧠 Training 1361 samples ...
+[Epoch 000] Train=0.000526 | Val=0.000284
+[Epoch 020] Train=0.000325 | Val=0.000179
+[Epoch 040] Train=0.000649 | Val=0.000617
+[Epoch 060] Train=0.000271 | Val=0.000109
+[Epoch 080] Train=0.000410 | Val=0.000168
+📈 Uncertainty stats → mean=0.00927, std=0.00332, selected_mean=0.02193, zscore=3.82
+   🔍 R2=0.9669 | MAE=0.1325 | RMSE=0.1957
+
+🌀 Iter 44 | labeled=1391 / 5730
+🧠 Training 1391 samples ...
+[Epoch 000] Train=0.000588 | Val=0.000371
+[Epoch 020] Train=0.000237 | Val=0.000167
+[Epoch 040] Train=0.000408 | Val=0.000180
+[Epoch 060] Train=0.000200 | Val=0.000090
+[Epoch 080] Train=0.000326 | Val=0.000174
+📈 Uncertainty stats → mean=0.00985, std=0.00354, selected_mean=0.02327, zscore=3.79
+   🔍 R2=0.9665 | MAE=0.1351 | RMSE=0.1967
+
+🌀 Iter 45 | labeled=1421 / 5730
+🧠 Training 1421 samples ...
+[Epoch 000] Train=0.000932 | Val=0.000936
+[Epoch 020] Train=0.000291 | Val=0.000144
+[Epoch 040] Train=0.000230 | Val=0.000162
+[Epoch 060] Train=0.000253 | Val=0.000098
+[Epoch 080] Train=0.000379 | Val=0.000183
+📈 Uncertainty stats → mean=0.00911, std=0.00323, selected_mean=0.02163, zscore=3.88
+   🔍 R2=0.9671 | MAE=0.1319 | RMSE=0.1951
+
+🌀 Iter 46 | labeled=1451 / 5730
+🧠 Training 1451 samples ...
+[Epoch 000] Train=0.000860 | Val=0.000458
+[Epoch 020] Train=0.000353 | Val=0.000187
+[Epoch 040] Train=0.000300 | Val=0.000131
+[Epoch 060] Train=0.000285 | Val=0.000125
+[Epoch 080] Train=0.000279 | Val=0.000229
+📈 Uncertainty stats → mean=0.00899, std=0.00323, selected_mean=0.02192, zscore=4.01
+   🔍 R2=0.9685 | MAE=0.1300 | RMSE=0.1907
+
+🌀 Iter 47 | labeled=1481 / 5730
+🧠 Training 1481 samples ...
+[Epoch 000] Train=0.000648 | Val=0.000360
+[Epoch 020] Train=0.000299 | Val=0.000245
+[Epoch 040] Train=0.000277 | Val=0.000153
+[Epoch 060] Train=0.000365 | Val=0.000240
+[Epoch 080] Train=0.000269 | Val=0.000144
+[Epoch 100] Train=0.000276 | Val=0.000123
+📈 Uncertainty stats → mean=0.00950, std=0.00329, selected_mean=0.02186, zscore=3.76
+   🔍 R2=0.9688 | MAE=0.1302 | RMSE=0.1896
+
+🌀 Iter 48 | labeled=1511 / 5730
+🧠 Training 1511 samples ...
+[Epoch 000] Train=0.000437 | Val=0.000289
+[Epoch 020] Train=0.000221 | Val=0.000096
+[Epoch 040] Train=0.000224 | Val=0.000109
+[Epoch 060] Train=0.000249 | Val=0.000127
+📈 Uncertainty stats → mean=0.00919, std=0.00316, selected_mean=0.02047, zscore=3.57
+   🔍 R2=0.9684 | MAE=0.1296 | RMSE=0.1908
+
+🌀 Iter 49 | labeled=1541 / 5730
+🧠 Training 1541 samples ...
+[Epoch 000] Train=0.000445 | Val=0.000210
+[Epoch 020] Train=0.000522 | Val=0.000233
+[Epoch 040] Train=0.000225 | Val=0.000110
+[Epoch 060] Train=0.000307 | Val=0.000156
+📈 Uncertainty stats → mean=0.00953, std=0.00328, selected_mean=0.02128, zscore=3.58
+   🔍 R2=0.9690 | MAE=0.1286 | RMSE=0.1888
+
+🌀 Iter 50 | labeled=1571 / 5730
+🧠 Training 1571 samples ...
+[Epoch 000] Train=0.000585 | Val=0.000339
+[Epoch 020] Train=0.000318 | Val=0.000283
+[Epoch 040] Train=0.000261 | Val=0.000104
+[Epoch 060] Train=0.000262 | Val=0.000138
+📈 Uncertainty stats → mean=0.00915, std=0.00320, selected_mean=0.02157, zscore=3.88
+   🔍 R2=0.9707 | MAE=0.1262 | RMSE=0.1835
+
+🌀 Iter 51 | labeled=1601 / 5730
+🧠 Training 1601 samples ...
+[Epoch 000] Train=0.000411 | Val=0.000254
+[Epoch 020] Train=0.000364 | Val=0.000705
+[Epoch 040] Train=0.000352 | Val=0.000177
+[Epoch 060] Train=0.000988 | Val=0.000417
+📈 Uncertainty stats → mean=0.01057, std=0.00379, selected_mean=0.02538, zscore=3.90
+   🔍 R2=0.9697 | MAE=0.1280 | RMSE=0.1868
+
+🌀 Iter 52 | labeled=1631 / 5730
+🧠 Training 1631 samples ...
+[Epoch 000] Train=0.000724 | Val=0.000396
+[Epoch 020] Train=0.000274 | Val=0.000133
+[Epoch 040] Train=0.000241 | Val=0.000082
+[Epoch 060] Train=0.000247 | Val=0.000087
+📈 Uncertainty stats → mean=0.00953, std=0.00332, selected_mean=0.02266, zscore=3.96
+   🔍 R2=0.9704 | MAE=0.1266 | RMSE=0.1847
+
+🌀 Iter 53 | labeled=1661 / 5730
+🧠 Training 1661 samples ...
+[Epoch 000] Train=0.000448 | Val=0.000260
+[Epoch 020] Train=0.000210 | Val=0.000118
+[Epoch 040] Train=0.000375 | Val=0.000279
+[Epoch 060] Train=0.000324 | Val=0.000199
+📈 Uncertainty stats → mean=0.00955, std=0.00334, selected_mean=0.02167, zscore=3.63
+   🔍 R2=0.9680 | MAE=0.1300 | RMSE=0.1920
+
+🌀 Iter 54 | labeled=1691 / 5730
+🧠 Training 1691 samples ...
+[Epoch 000] Train=0.000443 | Val=0.000311
+[Epoch 020] Train=0.000415 | Val=0.000226
+[Epoch 040] Train=0.000189 | Val=0.000086
+[Epoch 060] Train=0.000195 | Val=0.000109
+📈 Uncertainty stats → mean=0.00916, std=0.00325, selected_mean=0.02182, zscore=3.89
+   🔍 R2=0.9709 | MAE=0.1246 | RMSE=0.1832
+
+🌀 Iter 55 | labeled=1721 / 5730
+🧠 Training 1721 samples ...
+[Epoch 000] Train=0.000433 | Val=0.000355
+[Epoch 020] Train=0.000222 | Val=0.000112
+[Epoch 040] Train=0.000224 | Val=0.000095
+📈 Uncertainty stats → mean=0.00921, std=0.00322, selected_mean=0.02247, zscore=4.12
+   🔍 R2=0.9711 | MAE=0.1254 | RMSE=0.1827
+
+🌀 Iter 56 | labeled=1751 / 5730
+🧠 Training 1751 samples ...
+[Epoch 000] Train=0.000414 | Val=0.000251
+[Epoch 020] Train=0.000268 | Val=0.000132
+[Epoch 040] Train=0.000250 | Val=0.000116
+[Epoch 060] Train=0.000217 | Val=0.000121
+[Epoch 080] Train=0.000334 | Val=0.000216
+📈 Uncertainty stats → mean=0.00924, std=0.00332, selected_mean=0.02198, zscore=3.84
+   🔍 R2=0.9723 | MAE=0.1234 | RMSE=0.1789
+
+🌀 Iter 57 | labeled=1781 / 5730
+🧠 Training 1781 samples ...
+[Epoch 000] Train=0.000309 | Val=0.000184
+[Epoch 020] Train=0.000206 | Val=0.000122
+📈 Uncertainty stats → mean=0.00925, std=0.00322, selected_mean=0.02273, zscore=4.18
+   🔍 R2=0.9705 | MAE=0.1265 | RMSE=0.1847
+
+🌀 Iter 58 | labeled=1811 / 5730
+🧠 Training 1811 samples ...
+[Epoch 000] Train=0.000589 | Val=0.000350
+[Epoch 020] Train=0.000406 | Val=0.000212
+[Epoch 040] Train=0.000236 | Val=0.000106
+📈 Uncertainty stats → mean=0.00938, std=0.00326, selected_mean=0.02183, zscore=3.82
+   🔍 R2=0.9716 | MAE=0.1243 | RMSE=0.1814
+
+🌀 Iter 59 | labeled=1841 / 5730
+🧠 Training 1841 samples ...
+[Epoch 000] Train=0.000378 | Val=0.000216
+[Epoch 020] Train=0.000236 | Val=0.000121
+[Epoch 040] Train=0.000347 | Val=0.000176
+📈 Uncertainty stats → mean=0.01014, std=0.00371, selected_mean=0.02462, zscore=3.90
+   🔍 R2=0.9705 | MAE=0.1262 | RMSE=0.1851
+
+🌀 Iter 60 | labeled=1871 / 5730
+🧠 Training 1871 samples ...
+[Epoch 000] Train=0.000827 | Val=0.001096
+[Epoch 020] Train=0.000291 | Val=0.000097
+[Epoch 040] Train=0.000215 | Val=0.000102
+📈 Uncertainty stats → mean=0.00930, std=0.00330, selected_mean=0.02245, zscore=3.98
+   🔍 R2=0.9720 | MAE=0.1218 | RMSE=0.1802
+
+🌀 Iter 61 | labeled=1901 / 5730
+🧠 Training 1901 samples ...
+[Epoch 000] Train=0.000402 | Val=0.000181
+[Epoch 020] Train=0.000201 | Val=0.000102
+📈 Uncertainty stats → mean=0.00911, std=0.00314, selected_mean=0.02175, zscore=4.03
+   🔍 R2=0.9724 | MAE=0.1204 | RMSE=0.1791
+
+🌀 Iter 62 | labeled=1931 / 5730
+🧠 Training 1931 samples ...
+[Epoch 000] Train=0.000392 | Val=0.000332
+[Epoch 020] Train=0.000345 | Val=0.000242
+[Epoch 040] Train=0.000322 | Val=0.000248
+[Epoch 060] Train=0.000286 | Val=0.000150
+[Epoch 080] Train=0.000211 | Val=0.000109
+[Epoch 100] Train=0.000243 | Val=0.000129
+📈 Uncertainty stats → mean=0.00939, std=0.00331, selected_mean=0.02196, zscore=3.79
+   🔍 R2=0.9738 | MAE=0.1196 | RMSE=0.1746
+
+🌀 Iter 63 | labeled=1961 / 5730
+🧠 Training 1961 samples ...
+[Epoch 000] Train=0.000442 | Val=0.000219
+[Epoch 020] Train=0.000227 | Val=0.000114
+[Epoch 040] Train=0.000214 | Val=0.000164
+📈 Uncertainty stats → mean=0.00931, std=0.00326, selected_mean=0.02245, zscore=4.03
+   🔍 R2=0.9728 | MAE=0.1208 | RMSE=0.1779
+
+🌀 Iter 64 | labeled=1991 / 5730
+🧠 Training 1991 samples ...
+[Epoch 000] Train=0.000330 | Val=0.000206
+[Epoch 020] Train=0.000347 | Val=0.000173
+📈 Uncertainty stats → mean=0.00896, std=0.00300, selected_mean=0.02029, zscore=3.78
+   🔍 R2=0.9730 | MAE=0.1197 | RMSE=0.1768
+
+🌀 Iter 65 | labeled=2021 / 5730
+🧠 Training 2021 samples ...
+[Epoch 000] Train=0.000341 | Val=0.000209
+[Epoch 020] Train=0.000335 | Val=0.000126
+[Epoch 040] Train=0.000220 | Val=0.000091
+[Epoch 060] Train=0.000235 | Val=0.000158
+📈 Uncertainty stats → mean=0.00928, std=0.00325, selected_mean=0.02215, zscore=3.96
+   🔍 R2=0.9727 | MAE=0.1211 | RMSE=0.1778
+
+🌀 Iter 66 | labeled=2051 / 5730
+🧠 Training 2051 samples ...
+[Epoch 000] Train=0.000347 | Val=0.000150
+[Epoch 020] Train=0.000263 | Val=0.000111
+[Epoch 040] Train=0.000239 | Val=0.000133
+[Epoch 060] Train=0.000339 | Val=0.000181
+📈 Uncertainty stats → mean=0.00950, std=0.00331, selected_mean=0.02255, zscore=3.94
+   🔍 R2=0.9719 | MAE=0.1212 | RMSE=0.1805
+
+🌀 Iter 67 | labeled=2081 / 5730
+🧠 Training 2081 samples ...
+[Epoch 000] Train=0.000487 | Val=0.000232
+[Epoch 020] Train=0.000194 | Val=0.000125
+[Epoch 040] Train=0.000225 | Val=0.000098
+[Epoch 060] Train=0.000476 | Val=0.000836
+📈 Uncertainty stats → mean=0.00941, std=0.00323, selected_mean=0.02224, zscore=3.97
+   🔍 R2=0.9735 | MAE=0.1176 | RMSE=0.1756
+
+🌀 Iter 68 | labeled=2111 / 5730
+🧠 Training 2111 samples ...
+[Epoch 000] Train=0.000291 | Val=0.000135
+[Epoch 020] Train=0.000221 | Val=0.000097
+[Epoch 040] Train=0.000209 | Val=0.000093
+[Epoch 060] Train=0.000263 | Val=0.000101
+📈 Uncertainty stats → mean=0.00923, std=0.00325, selected_mean=0.02180, zscore=3.86
+   🔍 R2=0.9740 | MAE=0.1181 | RMSE=0.1739
+
+🌀 Iter 69 | labeled=2141 / 5730
+🧠 Training 2141 samples ...
+[Epoch 000] Train=0.000349 | Val=0.000256
+[Epoch 020] Train=0.000226 | Val=0.000118
+[Epoch 040] Train=0.000225 | Val=0.000086
+[Epoch 060] Train=0.000213 | Val=0.000090
+[Epoch 080] Train=0.000292 | Val=0.000168
+📈 Uncertainty stats → mean=0.00901, std=0.00317, selected_mean=0.02169, zscore=4.00
+   🔍 R2=0.9734 | MAE=0.1173 | RMSE=0.1760
+
+🌀 Iter 70 | labeled=2171 / 5730
+🧠 Training 2171 samples ...
+[Epoch 000] Train=0.000415 | Val=0.000243
+[Epoch 020] Train=0.000225 | Val=0.000091
+[Epoch 040] Train=0.000229 | Val=0.000086
+[Epoch 060] Train=0.000178 | Val=0.000121
+[Epoch 080] Train=0.000438 | Val=0.000159
+📈 Uncertainty stats → mean=0.00878, std=0.00299, selected_mean=0.02039, zscore=3.88
+   🔍 R2=0.9744 | MAE=0.1163 | RMSE=0.1727
+
+🌀 Iter 71 | labeled=2201 / 5730
+🧠 Training 2201 samples ...
+[Epoch 000] Train=0.000292 | Val=0.000160
+[Epoch 020] Train=0.000296 | Val=0.000156
+[Epoch 040] Train=0.000219 | Val=0.000117
+📈 Uncertainty stats → mean=0.00929, std=0.00328, selected_mean=0.02313, zscore=4.22
+   🔍 R2=0.9734 | MAE=0.1194 | RMSE=0.1760
+
+🌀 Iter 72 | labeled=2231 / 5730
+🧠 Training 2231 samples ...
+[Epoch 000] Train=0.000302 | Val=0.000181
+[Epoch 020] Train=0.000177 | Val=0.000096
+[Epoch 040] Train=0.000199 | Val=0.000097
+[Epoch 060] Train=0.000418 | Val=0.000304
+📈 Uncertainty stats → mean=0.00899, std=0.00308, selected_mean=0.02129, zscore=3.99
+   🔍 R2=0.9746 | MAE=0.1164 | RMSE=0.1722
+
+🌀 Iter 73 | labeled=2261 / 5730
+🧠 Training 2261 samples ...
+[Epoch 000] Train=0.000431 | Val=0.000181
+[Epoch 020] Train=0.000202 | Val=0.000193
+[Epoch 040] Train=0.000200 | Val=0.000111
+[Epoch 060] Train=0.000189 | Val=0.000100
+📈 Uncertainty stats → mean=0.01008, std=0.00380, selected_mean=0.02579, zscore=4.14
+   🔍 R2=0.9736 | MAE=0.1195 | RMSE=0.1754
+
+🌀 Iter 74 | labeled=2291 / 5730
+🧠 Training 2291 samples ...
+[Epoch 000] Train=0.000619 | Val=0.000384
+[Epoch 020] Train=0.000206 | Val=0.000128
+[Epoch 040] Train=0.000248 | Val=0.000169
+📈 Uncertainty stats → mean=0.00895, std=0.00305, selected_mean=0.02158, zscore=4.14
+   🔍 R2=0.9756 | MAE=0.1140 | RMSE=0.1685
+
+🌀 Iter 75 | labeled=2321 / 5730
+🧠 Training 2321 samples ...
+[Epoch 000] Train=0.000346 | Val=0.000298
+[Epoch 020] Train=0.000201 | Val=0.000116
+[Epoch 040] Train=0.000244 | Val=0.000111
+[Epoch 060] Train=0.000201 | Val=0.000092
+📈 Uncertainty stats → mean=0.00906, std=0.00315, selected_mean=0.02167, zscore=4.01
+   🔍 R2=0.9741 | MAE=0.1149 | RMSE=0.1734
+
+🌀 Iter 76 | labeled=2351 / 5730
+🧠 Training 2351 samples ...
+[Epoch 000] Train=0.000422 | Val=0.000236
+[Epoch 020] Train=0.000188 | Val=0.000089
+[Epoch 040] Train=0.000201 | Val=0.000107
+📈 Uncertainty stats → mean=0.00894, std=0.00302, selected_mean=0.01990, zscore=3.63
+   🔍 R2=0.9756 | MAE=0.1141 | RMSE=0.1681
+
+🌀 Iter 77 | labeled=2381 / 5730
+🧠 Training 2381 samples ...
+[Epoch 000] Train=0.000334 | Val=0.000169
+[Epoch 020] Train=0.000291 | Val=0.000155
+[Epoch 040] Train=0.000180 | Val=0.000076
+[Epoch 060] Train=0.000176 | Val=0.000101
+📈 Uncertainty stats → mean=0.00876, std=0.00299, selected_mean=0.02022, zscore=3.83
+   🔍 R2=0.9763 | MAE=0.1118 | RMSE=0.1658
+
+🌀 Iter 78 | labeled=2411 / 5730
+🧠 Training 2411 samples ...
+[Epoch 000] Train=0.000354 | Val=0.000194
+[Epoch 020] Train=0.000258 | Val=0.000135
+[Epoch 040] Train=0.000234 | Val=0.000130
+[Epoch 060] Train=0.000231 | Val=0.000095
+📈 Uncertainty stats → mean=0.00869, std=0.00301, selected_mean=0.02028, zscore=3.85
+   🔍 R2=0.9771 | MAE=0.1105 | RMSE=0.1629
+
+🌀 Iter 79 | labeled=2441 / 5730
+🧠 Training 2441 samples ...
+[Epoch 000] Train=0.000343 | Val=0.000194
+[Epoch 020] Train=0.000301 | Val=0.000156
+[Epoch 040] Train=0.000244 | Val=0.000123
+[Epoch 060] Train=0.000554 | Val=0.000268
+[Epoch 080] Train=0.000197 | Val=0.000081
+[Epoch 100] Train=0.000186 | Val=0.000111
+[Epoch 120] Train=0.000230 | Val=0.000095
+[Epoch 140] Train=0.000178 | Val=0.000068
+[Epoch 160] Train=0.000200 | Val=0.000080
+📈 Uncertainty stats → mean=0.00858, std=0.00280, selected_mean=0.01852, zscore=3.55
+   🔍 R2=0.9768 | MAE=0.1105 | RMSE=0.1637
+
+🌀 Iter 80 | labeled=2471 / 5730
+🧠 Training 2471 samples ...
+[Epoch 000] Train=0.000299 | Val=0.000144
+[Epoch 020] Train=0.000189 | Val=0.000104
+[Epoch 040] Train=0.000230 | Val=0.000090
+📈 Uncertainty stats → mean=0.00850, std=0.00294, selected_mean=0.02028, zscore=4.00
+   🔍 R2=0.9785 | MAE=0.1067 | RMSE=0.1578
+
+🌀 Iter 81 | labeled=2501 / 5730
+🧠 Training 2501 samples ...
+[Epoch 000] Train=0.000233 | Val=0.000114
+[Epoch 020] Train=0.000209 | Val=0.000144
+[Epoch 040] Train=0.000223 | Val=0.000114
+[Epoch 060] Train=0.000395 | Val=0.000302
+📈 Uncertainty stats → mean=0.00891, std=0.00315, selected_mean=0.02187, zscore=4.11
+   🔍 R2=0.9769 | MAE=0.1092 | RMSE=0.1634
+
+🌀 Iter 82 | labeled=2531 / 5730
+🧠 Training 2531 samples ...
+[Epoch 000] Train=0.000311 | Val=0.000159
+[Epoch 020] Train=0.000174 | Val=0.000090
+[Epoch 040] Train=0.000227 | Val=0.000125
+📈 Uncertainty stats → mean=0.00890, std=0.00312, selected_mean=0.02057, zscore=3.74
+   🔍 R2=0.9781 | MAE=0.1078 | RMSE=0.1594
+
+🌀 Iter 83 | labeled=2561 / 5730
+🧠 Training 2561 samples ...
+[Epoch 000] Train=0.000268 | Val=0.000163
+[Epoch 020] Train=0.000460 | Val=0.000746
+[Epoch 040] Train=0.000196 | Val=0.000126
+[Epoch 060] Train=0.000198 | Val=0.000099
+[Epoch 080] Train=0.000167 | Val=0.000741
+[Epoch 100] Train=0.000227 | Val=0.000088
+📈 Uncertainty stats → mean=0.00906, std=0.00320, selected_mean=0.02217, zscore=4.09
+   🔍 R2=0.9758 | MAE=0.1110 | RMSE=0.1673
+
+🌀 Iter 84 | labeled=2591 / 5730
+🧠 Training 2591 samples ...
+[Epoch 000] Train=0.000646 | Val=0.000234
+[Epoch 020] Train=0.000236 | Val=0.000115
+[Epoch 040] Train=0.000166 | Val=0.000072
+[Epoch 060] Train=0.000204 | Val=0.000078
+📈 Uncertainty stats → mean=0.00869, std=0.00295, selected_mean=0.02023, zscore=3.91
+   🔍 R2=0.9787 | MAE=0.1060 | RMSE=0.1569
+
+🌀 Iter 85 | labeled=2621 / 5730
+🧠 Training 2621 samples ...
+[Epoch 000] Train=0.000336 | Val=0.000193
+[Epoch 020] Train=0.000170 | Val=0.000065
+[Epoch 040] Train=0.000193 | Val=0.000111
+📈 Uncertainty stats → mean=0.00871, std=0.00307, selected_mean=0.02196, zscore=4.32
+   🔍 R2=0.9776 | MAE=0.1082 | RMSE=0.1610
+
+🌀 Iter 86 | labeled=2651 / 5730
+🧠 Training 2651 samples ...
+[Epoch 000] Train=0.000619 | Val=0.000345
+[Epoch 020] Train=0.000210 | Val=0.000122
+[Epoch 040] Train=0.000217 | Val=0.000163
+[Epoch 060] Train=0.000197 | Val=0.000111
+📈 Uncertainty stats → mean=0.00907, std=0.00325, selected_mean=0.02210, zscore=4.01
+   🔍 R2=0.9782 | MAE=0.1075 | RMSE=0.1591
+
+🌀 Iter 87 | labeled=2681 / 5730
+🧠 Training 2681 samples ...
+[Epoch 000] Train=0.000335 | Val=0.000204
+[Epoch 020] Train=0.000248 | Val=0.000131
+[Epoch 040] Train=0.000233 | Val=0.000099
+[Epoch 060] Train=0.000172 | Val=0.000073
+[Epoch 080] Train=0.000172 | Val=0.000108
+📈 Uncertainty stats → mean=0.00879, std=0.00302, selected_mean=0.02078, zscore=3.97
+   🔍 R2=0.9787 | MAE=0.1065 | RMSE=0.1574
+
+🌀 Iter 88 | labeled=2710 / 5730
+🧠 Training 2710 samples ...
+[Epoch 000] Train=0.000271 | Val=0.000125
+[Epoch 020] Train=0.000199 | Val=0.000099
+[Epoch 040] Train=0.000203 | Val=0.000091
+📈 Uncertainty stats → mean=0.00854, std=0.00299, selected_mean=0.02060, zscore=4.03
+   🔍 R2=0.9788 | MAE=0.1051 | RMSE=0.1574
+
+🌀 Iter 89 | labeled=2740 / 5730
+🧠 Training 2740 samples ...
+[Epoch 000] Train=0.000320 | Val=0.000222
+[Epoch 020] Train=0.000186 | Val=0.000083
+[Epoch 040] Train=0.000274 | Val=0.000162
+📈 Uncertainty stats → mean=0.00853, std=0.00302, selected_mean=0.02055, zscore=3.98
+   🔍 R2=0.9787 | MAE=0.1046 | RMSE=0.1575
+
+🌀 Iter 90 | labeled=2770 / 5730
+🧠 Training 2770 samples ...
+[Epoch 000] Train=0.000240 | Val=0.000280
+[Epoch 020] Train=0.000186 | Val=0.000087
+[Epoch 040] Train=0.000234 | Val=0.000112
+[Epoch 060] Train=0.000253 | Val=0.000085
+📈 Uncertainty stats → mean=0.00900, std=0.00329, selected_mean=0.02318, zscore=4.32
+   🔍 R2=0.9787 | MAE=0.1064 | RMSE=0.1577
+
+🌀 Iter 91 | labeled=2800 / 5730
+🧠 Training 2800 samples ...
+[Epoch 000] Train=0.000275 | Val=0.000196
+[Epoch 020] Train=0.000168 | Val=0.000110
+📈 Uncertainty stats → mean=0.00877, std=0.00303, selected_mean=0.01989, zscore=3.67
+   🔍 R2=0.9791 | MAE=0.1052 | RMSE=0.1559
+
+🌀 Iter 92 | labeled=2830 / 5730
+🧠 Training 2830 samples ...
+[Epoch 000] Train=0.000322 | Val=0.000179
+[Epoch 020] Train=0.000189 | Val=0.000085
+[Epoch 040] Train=0.000193 | Val=0.000085
+[Epoch 060] Train=0.000333 | Val=0.000372
+📈 Uncertainty stats → mean=0.00856, std=0.00303, selected_mean=0.02105, zscore=4.12
+   🔍 R2=0.9796 | MAE=0.1037 | RMSE=0.1542
+
+🌀 Iter 93 | labeled=2860 / 5730
+🧠 Training 2860 samples ...
+[Epoch 000] Train=0.000233 | Val=0.000137
+[Epoch 020] Train=0.000202 | Val=0.000083
+📈 Uncertainty stats → mean=0.00875, std=0.00301, selected_mean=0.01971, zscore=3.64
+   🔍 R2=0.9791 | MAE=0.1060 | RMSE=0.1561
+
+🌀 Iter 94 | labeled=2890 / 5730
+🧠 Training 2890 samples ...
+[Epoch 000] Train=0.000379 | Val=0.000180
+[Epoch 020] Train=0.000305 | Val=0.000141
+[Epoch 040] Train=0.000180 | Val=0.000083
+[Epoch 060] Train=0.000198 | Val=0.000088
+📈 Uncertainty stats → mean=0.00853, std=0.00293, selected_mean=0.01947, zscore=3.73
+   🔍 R2=0.9805 | MAE=0.1010 | RMSE=0.1507
+
+🌀 Iter 95 | labeled=2920 / 5730
+🧠 Training 2920 samples ...
+[Epoch 000] Train=0.000246 | Val=0.000132
+[Epoch 020] Train=0.000199 | Val=0.000079
+[Epoch 040] Train=0.000184 | Val=0.000083
+[Epoch 060] Train=0.000173 | Val=0.000084
+[Epoch 080] Train=0.000183 | Val=0.000084
+📈 Uncertainty stats → mean=0.00855, std=0.00287, selected_mean=0.01932, zscore=3.75
+   🔍 R2=0.9802 | MAE=0.1025 | RMSE=0.1522
+
+🌀 Iter 96 | labeled=2950 / 5730
+🧠 Training 2950 samples ...
+[Epoch 000] Train=0.000230 | Val=0.000208
+[Epoch 020] Train=0.000191 | Val=0.000095
+[Epoch 040] Train=0.000224 | Val=0.000092
+📈 Uncertainty stats → mean=0.00852, std=0.00296, selected_mean=0.01996, zscore=3.86
+   🔍 R2=0.9805 | MAE=0.1009 | RMSE=0.1510
+
+🌀 Iter 97 | labeled=2980 / 5730
+🧠 Training 2980 samples ...
+[Epoch 000] Train=0.000249 | Val=0.000134
+[Epoch 020] Train=0.000183 | Val=0.000081
+[Epoch 040] Train=0.000179 | Val=0.000095
+📈 Uncertainty stats → mean=0.00835, std=0.00291, selected_mean=0.02073, zscore=4.25
+   🔍 R2=0.9804 | MAE=0.1011 | RMSE=0.1519
+
+🌀 Iter 98 | labeled=3010 / 5730
+🧠 Training 3010 samples ...
+[Epoch 000] Train=0.000282 | Val=0.000155
+[Epoch 020] Train=0.000214 | Val=0.000133
+[Epoch 040] Train=0.000323 | Val=0.000143
+📈 Uncertainty stats → mean=0.00883, std=0.00316, selected_mean=0.02265, zscore=4.38
+   🔍 R2=0.9799 | MAE=0.1021 | RMSE=0.1535
+
+🌀 Iter 99 | labeled=3040 / 5730
+🧠 Training 3040 samples ...
+[Epoch 000] Train=0.000225 | Val=0.000095
+[Epoch 020] Train=0.000204 | Val=0.000111
+[Epoch 040] Train=0.000175 | Val=0.000068
+[Epoch 060] Train=0.000186 | Val=0.000086
+📈 Uncertainty stats → mean=0.00916, std=0.00344, selected_mean=0.02256, zscore=3.90
+   🔍 R2=0.9794 | MAE=0.1040 | RMSE=0.1557
+
+🌀 Iter 100 | labeled=3070 / 5730
+🧠 Training 3070 samples ...
+[Epoch 000] Train=0.000450 | Val=0.000240
+[Epoch 020] Train=0.000280 | Val=0.000151
+[Epoch 040] Train=0.000185 | Val=0.000110
+📈 Uncertainty stats → mean=0.00861, std=0.00292, selected_mean=0.01847, zscore=3.37
+   🔍 R2=0.9802 | MAE=0.1023 | RMSE=0.1525
+
+🌀 Iter 101 | labeled=3100 / 5730
+🧠 Training 3100 samples ...
+[Epoch 000] Train=0.000352 | Val=0.000200
+[Epoch 020] Train=0.000181 | Val=0.000080
+[Epoch 040] Train=0.000183 | Val=0.000079
+📈 Uncertainty stats → mean=0.00855, std=0.00301, selected_mean=0.02021, zscore=3.88
+   🔍 R2=0.9810 | MAE=0.0996 | RMSE=0.1497
+
+🌀 Iter 102 | labeled=3130 / 5730
+🧠 Training 3130 samples ...
+[Epoch 000] Train=0.000278 | Val=0.000164
+[Epoch 020] Train=0.000170 | Val=0.000079
+[Epoch 040] Train=0.000153 | Val=0.000063
+[Epoch 060] Train=0.000236 | Val=0.000220
+📈 Uncertainty stats → mean=0.00861, std=0.00291, selected_mean=0.01903, zscore=3.59
+   🔍 R2=0.9802 | MAE=0.1016 | RMSE=0.1530
+
+🌀 Iter 103 | labeled=3160 / 5730
+🧠 Training 3160 samples ...
+[Epoch 000] Train=0.000254 | Val=0.000193
+[Epoch 020] Train=0.000173 | Val=0.000070
+[Epoch 040] Train=0.000211 | Val=0.000125
+📈 Uncertainty stats → mean=0.00831, std=0.00290, selected_mean=0.02007, zscore=4.06
+   🔍 R2=0.9808 | MAE=0.0999 | RMSE=0.1508
+
+🌀 Iter 104 | labeled=3190 / 5730
+🧠 Training 3190 samples ...
+[Epoch 000] Train=0.000228 | Val=0.000162
+[Epoch 020] Train=0.000221 | Val=0.000077
+[Epoch 040] Train=0.000161 | Val=0.000086
+[Epoch 060] Train=0.000174 | Val=0.000087
+[Epoch 080] Train=0.000165 | Val=0.000077
+📈 Uncertainty stats → mean=0.00858, std=0.00289, selected_mean=0.01852, zscore=3.44
+   🔍 R2=0.9810 | MAE=0.0996 | RMSE=0.1499
+
+🌀 Iter 105 | labeled=3220 / 5730
+🧠 Training 3220 samples ...
+[Epoch 000] Train=0.000356 | Val=0.000262
+[Epoch 020] Train=0.000189 | Val=0.000087
+[Epoch 040] Train=0.000314 | Val=0.000169
+📈 Uncertainty stats → mean=0.00841, std=0.00288, selected_mean=0.01956, zscore=3.87
+   🔍 R2=0.9813 | MAE=0.0985 | RMSE=0.1489
+
+🌀 Iter 106 | labeled=3250 / 5730
+🧠 Training 3250 samples ...
+[Epoch 000] Train=0.000328 | Val=0.000141
+[Epoch 020] Train=0.000171 | Val=0.000081
+[Epoch 040] Train=0.000210 | Val=0.000122
+[Epoch 060] Train=0.000167 | Val=0.000073
+📈 Uncertainty stats → mean=0.00831, std=0.00293, selected_mean=0.01974, zscore=3.90
+   🔍 R2=0.9812 | MAE=0.0991 | RMSE=0.1492
+
+🌀 Iter 107 | labeled=3280 / 5730
+🧠 Training 3280 samples ...
+[Epoch 000] Train=0.000231 | Val=0.000113
+[Epoch 020] Train=0.000219 | Val=0.000088
+[Epoch 040] Train=0.000201 | Val=0.000080
+[Epoch 060] Train=0.000179 | Val=0.000078
+📈 Uncertainty stats → mean=0.00843, std=0.00287, selected_mean=0.01871, zscore=3.58
+   🔍 R2=0.9813 | MAE=0.0984 | RMSE=0.1485
+
+🌀 Iter 108 | labeled=3310 / 5730
+🧠 Training 3310 samples ...
+[Epoch 000] Train=0.000236 | Val=0.000115
+[Epoch 020] Train=0.000203 | Val=0.000126
+[Epoch 040] Train=0.000227 | Val=0.000107
+📈 Uncertainty stats → mean=0.00877, std=0.00328, selected_mean=0.02291, zscore=4.31
+   🔍 R2=0.9810 | MAE=0.0998 | RMSE=0.1495
+
+🌀 Iter 109 | labeled=3340 / 5730
+🧠 Training 3340 samples ...
+[Epoch 000] Train=0.000282 | Val=0.000169
+[Epoch 020] Train=0.000158 | Val=0.000083
+[Epoch 040] Train=0.000530 | Val=0.000261
+📈 Uncertainty stats → mean=0.00881, std=0.00310, selected_mean=0.01987, zscore=3.57
+   🔍 R2=0.9819 | MAE=0.0976 | RMSE=0.1458
+
+🌀 Iter 110 | labeled=3370 / 5730
+🧠 Training 3370 samples ...
+[Epoch 000] Train=0.000284 | Val=0.000127
+[Epoch 020] Train=0.000153 | Val=0.000099
+[Epoch 040] Train=0.000215 | Val=0.000114
+📈 Uncertainty stats → mean=0.00842, std=0.00303, selected_mean=0.01987, zscore=3.77
+   🔍 R2=0.9817 | MAE=0.0991 | RMSE=0.1466
+
+🌀 Iter 111 | labeled=3400 / 5730
+🧠 Training 3400 samples ...
+[Epoch 000] Train=0.000247 | Val=0.000105
+[Epoch 020] Train=0.000235 | Val=0.000126
+[Epoch 040] Train=0.000237 | Val=0.000126
+[Epoch 060] Train=0.000216 | Val=0.000106
+📈 Uncertainty stats → mean=0.00865, std=0.00300, selected_mean=0.02058, zscore=3.97
+   🔍 R2=0.9815 | MAE=0.0985 | RMSE=0.1477
+
+🌀 Iter 112 | labeled=3430 / 5730
+🧠 Training 3430 samples ...
+[Epoch 000] Train=0.000204 | Val=0.000109
+[Epoch 020] Train=0.000175 | Val=0.000079
+[Epoch 040] Train=0.000184 | Val=0.000088
+📈 Uncertainty stats → mean=0.00834, std=0.00281, selected_mean=0.01883, zscore=3.73
+   🔍 R2=0.9823 | MAE=0.0965 | RMSE=0.1446
+
+🌀 Iter 113 | labeled=3459 / 5730
+🧠 Training 3459 samples ...
+[Epoch 000] Train=0.000210 | Val=0.000150
+[Epoch 020] Train=0.000631 | Val=0.000235
+[Epoch 040] Train=0.000197 | Val=0.000076
+[Epoch 060] Train=0.000176 | Val=0.000071
+[Epoch 080] Train=0.000194 | Val=0.000101
+📈 Uncertainty stats → mean=0.00847, std=0.00292, selected_mean=0.01917, zscore=3.66
+   🔍 R2=0.9818 | MAE=0.0976 | RMSE=0.1465
+
+🌀 Iter 114 | labeled=3489 / 5730
+🧠 Training 3489 samples ...
+[Epoch 000] Train=0.000211 | Val=0.000116
+[Epoch 020] Train=0.000186 | Val=0.000087
+[Epoch 040] Train=0.000246 | Val=0.000148
+[Epoch 060] Train=0.000194 | Val=0.000085
+📈 Uncertainty stats → mean=0.00819, std=0.00280, selected_mean=0.01839, zscore=3.64
+   🔍 R2=0.9818 | MAE=0.0977 | RMSE=0.1470
+
+🌀 Iter 115 | labeled=3519 / 5730
+🧠 Training 3519 samples ...
+[Epoch 000] Train=0.000274 | Val=0.000236
+[Epoch 020] Train=0.000173 | Val=0.000075
+[Epoch 040] Train=0.000178 | Val=0.000080
+[Epoch 060] Train=0.000161 | Val=0.000077
+[Epoch 080] Train=0.000168 | Val=0.000077
+📈 Uncertainty stats → mean=0.00824, std=0.00298, selected_mean=0.02000, zscore=3.95
+   🔍 R2=0.9813 | MAE=0.0984 | RMSE=0.1486
+
+🌀 Iter 116 | labeled=3549 / 5730
+🧠 Training 3549 samples ...
+[Epoch 000] Train=0.000195 | Val=0.000098
+[Epoch 020] Train=0.000224 | Val=0.000114
+[Epoch 040] Train=0.000166 | Val=0.000065
+📈 Uncertainty stats → mean=0.00826, std=0.00282, selected_mean=0.01838, zscore=3.58
+   🔍 R2=0.9815 | MAE=0.0983 | RMSE=0.1481
+
+🌀 Iter 117 | labeled=3579 / 5730
+🧠 Training 3579 samples ...
+[Epoch 000] Train=0.000241 | Val=0.000159
+[Epoch 020] Train=0.000183 | Val=0.000073
+[Epoch 040] Train=0.000189 | Val=0.000084
+[Epoch 060] Train=0.000195 | Val=0.000131
+📈 Uncertainty stats → mean=0.00812, std=0.00282, selected_mean=0.01820, zscore=3.57
+   🔍 R2=0.9822 | MAE=0.0969 | RMSE=0.1454
+
+🌀 Iter 118 | labeled=3609 / 5730
+🧠 Training 3609 samples ...
+[Epoch 000] Train=0.000323 | Val=0.000179
+[Epoch 020] Train=0.000166 | Val=0.000096
+[Epoch 040] Train=0.000174 | Val=0.000075
+📈 Uncertainty stats → mean=0.00847, std=0.00299, selected_mean=0.01950, zscore=3.69
+   🔍 R2=0.9818 | MAE=0.0978 | RMSE=0.1471
+
+🌀 Iter 119 | labeled=3639 / 5730
+🧠 Training 3639 samples ...
+[Epoch 000] Train=0.000246 | Val=0.000110
+[Epoch 020] Train=0.000191 | Val=0.000122
+[Epoch 040] Train=0.000271 | Val=0.000145
+[Epoch 060] Train=0.000214 | Val=0.000126
+📈 Uncertainty stats → mean=0.00778, std=0.00265, selected_mean=0.01728, zscore=3.59
+   🔍 R2=0.9830 | MAE=0.0952 | RMSE=0.1420
+
+🌀 Iter 120 | labeled=3669 / 5730
+🧠 Training 3669 samples ...
+[Epoch 000] Train=0.000200 | Val=0.000145
+[Epoch 020] Train=0.000152 | Val=0.000061
+[Epoch 040] Train=0.000162 | Val=0.000062
+📈 Uncertainty stats → mean=0.00808, std=0.00276, selected_mean=0.01752, zscore=3.43
+   🔍 R2=0.9821 | MAE=0.0968 | RMSE=0.1452
+
+🌀 Iter 121 | labeled=3699 / 5730
+🧠 Training 3699 samples ...
+[Epoch 000] Train=0.000210 | Val=0.000113
+[Epoch 020] Train=0.000225 | Val=0.000108
+[Epoch 040] Train=0.000173 | Val=0.000082
+[Epoch 060] Train=0.000178 | Val=0.000075
+[Epoch 080] Train=0.000218 | Val=0.000104
+📈 Uncertainty stats → mean=0.00867, std=0.00295, selected_mean=0.01902, zscore=3.51
+   🔍 R2=0.9825 | MAE=0.0964 | RMSE=0.1439
+
+🌀 Iter 122 | labeled=3729 / 5730
+🧠 Training 3729 samples ...
+[Epoch 000] Train=0.000370 | Val=0.000225
+[Epoch 020] Train=0.000217 | Val=0.000193
+[Epoch 040] Train=0.000154 | Val=0.000072
+[Epoch 060] Train=0.000152 | Val=0.000065
+[Epoch 080] Train=0.000170 | Val=0.000055
+[Epoch 100] Train=0.000201 | Val=0.000101
+📈 Uncertainty stats → mean=0.00796, std=0.00284, selected_mean=0.01913, zscore=3.93
+   🔍 R2=0.9831 | MAE=0.0947 | RMSE=0.1419
+
+🌀 Iter 123 | labeled=3759 / 5730
+🧠 Training 3759 samples ...
+[Epoch 000] Train=0.000216 | Val=0.000144
+[Epoch 020] Train=0.000182 | Val=0.000088
+[Epoch 040] Train=0.000188 | Val=0.000076
+[Epoch 060] Train=0.000155 | Val=0.000070
+📈 Uncertainty stats → mean=0.00838, std=0.00316, selected_mean=0.02183, zscore=4.25
+   🔍 R2=0.9816 | MAE=0.0994 | RMSE=0.1482
+
+🌀 Iter 124 | labeled=3789 / 5730
+🧠 Training 3789 samples ...
+[Epoch 000] Train=0.000277 | Val=0.000136
+[Epoch 020] Train=0.000213 | Val=0.000093

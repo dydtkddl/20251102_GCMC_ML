@@ -1,0 +1,33 @@
+=== MACE Training Started ===
+Sun 02 Nov 2025 02:11:00 AM KST
+Working Directory: /data/dydtkddhkdwk/20251101_MOF_GCMC_WORKFLOW
+Sun Nov  2 02:11:00 2025       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.161.07             Driver Version: 535.161.07   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce RTX 3090        On  | 00000000:43:00.0 Off |                  N/A |
+| 61%   26C    P8              27W / 350W |      1MiB / 24576MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+📂 CSV 로드 완료: ./313K_merged_dataset.exclude.broken_cif.csv (7,639행)
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/20251101_MOF_GCMC_WORKFLOW/MOF_GCMC_MODEL.AL.test.py", line 123, in <module>
+    df, meta = load_mof_dataset(
+               ^^^^^^^^^^^^^^^^^
+  File "/data/dydtkddhkdwk/20251101_MOF_GCMC_WORKFLOW/MOF_GCMC_DATALOADER.py", line 79, in load_mof_dataset
+    raise KeyError(f"❌ 누락된 컬럼 발견: {missing_cols}")
+KeyError: '❌ 누락된 컬럼 발견: [0.01, 15]'
+=== Job Completed ===
+Sun 02 Nov 2025 02:11:03 AM KST

@@ -1,0 +1,8 @@
+📂 CSV 로드 완료: ./313K_merged_dataset.exclude.broken_cif.csv (7,639행)
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/20251101_MOF_GCMC_WORKFLOW/MOF_GCMC_MODEL.AL.test.py", line 123, in <module>
+    df, meta = load_mof_dataset(
+               ^^^^^^^^^^^^^^^^^
+  File "/data/dydtkddhkdwk/20251101_MOF_GCMC_WORKFLOW/MOF_GCMC_DATALOADER.py", line 79, in load_mof_dataset
+    raise KeyError(f"❌ 누락된 컬럼 발견: {missing_cols}")
+KeyError: '❌ 누락된 컬럼 발견: [0.01, 15]'

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/20251101_MOF_GCMC_WORKFLOW/MOF_GCMC_MODEL.AL.test.py", line 67, in <module>
+    json.dump(CONFIG, f, indent=4)
+    ^^^^
+NameError: name 'json' is not defined
