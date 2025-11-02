@@ -1,0 +1,3 @@
+2025-11-03 00:10:06,690 | INFO | Logging started → ./RUN_FULL_EXP/273K/HENRY_to_1/CAT/lowq/qtfrac_0_45/seed_2025/logs.txt
+2025-11-03 00:10:06,692 | INFO | 🚀 Starting: 273K | HENRY_to_1 | mode=lowq | qt_frac=0.45 | seed=2025
+2025-11-03 00:10:06,912 | INFO | [TRAIN] Model=CAT | Samples=3298 | Features=13
