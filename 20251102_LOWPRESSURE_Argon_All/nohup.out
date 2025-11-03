@@ -1,0 +1,42 @@
+2025-11-03 23:19:09,328 | INFO | Logging started → ./RUN_FULL_EXP/273K/HENRY_to_1/CAT/trainratio_0_60/struct_with_input/qtfrac_0_30/seed_2028/logs.txt
+2025-11-03 23:19:09,328 | INFO | 🚀 Starting: 273K | HENRY_to_1 | mode=struct_with_input | qt_frac=0.30 | seed=2028
+2025-11-03 23:19:09,366 | INFO | [TRAIN] Model=CAT | Samples=4358 | Features=13
+2025-11-03 23:19:09,366 | INFO | [TRAIN] Model=CAT | Samples=4358 | Features=13
+2025-11-03 23:19:11,983 | INFO | [TIME] Training took 2.62 s
+2025-11-03 23:19:11,983 | INFO | [TIME] Training took 2.62 s
+2025-11-03 23:19:11,991 | INFO | [EVAL] R2=0.9854 | MAE=0.0159 | RMSE=0.0010 | MAPE=2.81%
+2025-11-03 23:19:11,991 | INFO | [EVAL] R2=0.9854 | MAE=0.0159 | RMSE=0.0010 | MAPE=2.81%
+2025-11-03 23:19:12,020 | INFO | [SAVE] predictions → ./RUN_FULL_EXP/273K/HENRY_to_1/CAT/trainratio_0_60/struct_with_input/qtfrac_0_30/seed_2028/predictions.csv
+2025-11-03 23:19:12,020 | INFO | [SAVE] predictions → ./RUN_FULL_EXP/273K/HENRY_to_1/CAT/trainratio_0_60/struct_with_input/qtfrac_0_30/seed_2028/predictions.csv
+2025-11-03 23:19:12,086 | INFO | [SAVE] full predictions → ./RUN_FULL_EXP/273K/HENRY_to_1/CAT/trainratio_0_60/struct_with_input/qtfrac_0_30/seed_2028/predictions_full.csv
+2025-11-03 23:19:12,086 | INFO | [SAVE] full predictions → ./RUN_FULL_EXP/273K/HENRY_to_1/CAT/trainratio_0_60/struct_with_input/qtfrac_0_30/seed_2028/predictions_full.csv
+2025-11-03 23:19:12,087 | INFO | ✅ Finished case. Results saved at ./RUN_FULL_EXP/273K/HENRY_to_1/CAT/trainratio_0_60/struct_with_input/qtfrac_0_30/seed_2028
+📂 CSV 로드 완료: ../273K_merged_dataset.exclude.broken_cif.csv (7,639행)
+🧹 결측치 제거: 376개 행 삭제 (7263개 남음)
+
+📊 [요약]
+입력 피처: 12개
+저압 피처: 1개
+예측 피처: 0개
+출력 피처: 1개
+유효 샘플: 7,263/7,639
+
+🔍 [샘플 데이터]
+                           filename       LCD  ...     HENRY         1
+0                      ACOCOM_clean  24.60642  ...  0.000005  0.487727
+1                      ACOCUS_clean  24.38417  ...  0.000005  0.501413
+2                      ACODAZ_clean  23.29182  ...  0.000005  0.491670
+3    acscombsci.5b00188_34903_clean   6.15808  ...  0.000035  1.945599
+4  acscombsci.5b00188_5013797_clean   9.69678  ...  0.000005  0.471141
+
+[5 rows x 15 columns]
+✅ Dataset 준비 완료 → 입력 13개, 출력 1개
+
+📊 [GCMCSampler: qt_then_rd]
+   Total samples      : 7,263
+   Train/Test split   : 4,358 / 2,905 (target train=0.60)
+   Quantile frac (γ_q): 0.30 → 2,179 samples (30.00% of total)
+   Random samples     : 2,179 (30.00% of total)
+   Remaining for test : 2,905 (40.00% of total)
+   Seeds used         : qt=3028, rd=4028
+───────────────────────────────────────────────

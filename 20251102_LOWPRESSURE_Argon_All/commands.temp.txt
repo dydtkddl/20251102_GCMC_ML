@@ -1,3 +1,0 @@
-python engine.single.case.py --temp 273K --lowp HENRY --outp 1 --seed 2025 --mode struct --qt_frac 0.50
-python engine.single.case.py --temp 273K --lowp HENRY --outp 1 --seed 2025 --mode lowr --qt_frac 0.50
-python engine.single.case.py --temp 273K --lowp HENRY --outp 1 --seed 2025 --mode lowq --qt_frac 0.50

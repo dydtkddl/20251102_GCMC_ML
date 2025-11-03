@@ -50,17 +50,17 @@ def setup_logger(log_path: str):
 # ───────────────────────────────────────────────
 def run_single_case(args):
     np.random.seed(args.seed)
-
-    # Hierarchical path
+    # ─── Hierarchical run directory ───
     combo = f"{args.lowp}_to_{args.outp}"
     run_dir = os.path.join(
-        args.out_root,
-        args.temp,
-        combo,
-        args.model.upper(),
-        args.mode,
-        f"qtfrac_{args.qt_frac:.2f}".replace(".", "_"),
-        f"seed_{args.seed}"
+        args.out_root,                              # ./RUN_FULL_EXP
+        args.temp,                                  # 273K / 293K / 313K
+        combo,                                      # e.g. HENRY_to_1
+        args.model.upper(),                         # CAT / RF / GBM
+        f"trainratio_{args.train_ratio:.2f}".replace(".", "_"),  # trainratio_0_50
+        args.mode,                                  # struct / struct_with_input
+        f"qtfrac_{args.qt_frac:.2f}".replace(".", "_"),           # qtfrac_0_25
+        f"seed_{args.seed}"                         # seed_2025
     )
     os.makedirs(run_dir, exist_ok=True)
     setup_logger(os.path.join(run_dir, "logs.txt"))
@@ -72,7 +72,7 @@ def run_single_case(args):
     if not os.path.exists(data_path):
         logging.error(f"Dataset not found: {data_path}")
         return
-
+# args.mode는 struct / lowr / lowq / lowqr50_50 / lowqr10_90 등등
     df, meta = load_mof_dataset(
         csv_path=data_path,
         input_features=[
@@ -86,12 +86,9 @@ def run_single_case(args):
     id_col = meta["meta_columns"][0]
 
     # ─── Sampler selection ───
-    if args.mode == "lowq":
+    if args.mode == "struct_with_input":
         sampler_type = "qt_then_rd"
         qt_col = args.lowp
-    elif args.mode == "lowr":
-        sampler_type = "random_with_input"
-        qt_col = None
     else:
         sampler_type = "random_struct"
         qt_col = None
@@ -166,7 +163,7 @@ if __name__ == "__main__":
     parser.add_argument("--lowp", required=True, help="Low-pressure input feature")
     parser.add_argument("--outp", required=True, help="Target output pressure feature")
     parser.add_argument("--seed", type=int, required=True)
-    parser.add_argument("--mode", choices=["struct", "lowr", "lowq"], required=True)
+    parser.add_argument("--mode", choices=["struct", "struct_with_input"], required=True)
     parser.add_argument("--qt_frac", type=float, required=True)
     parser.add_argument("--train_ratio", type=float, default=0.5)
     parser.add_argument("--out_root", default="./RUN_FULL_EXP")
