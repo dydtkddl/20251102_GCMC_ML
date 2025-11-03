@@ -129,6 +129,8 @@ def run_single_case(args):
     )
     # ─── Merge with Base ───
     df_new = merge_with_base_dataset(df_pred, df_base, meta)
+    target_col = meta["output_features"][0]
+    id_col = meta["meta_columns"][0]
 
     # ─── Set qt_col = predicted 1bar (or selected pressure) ───
     qt_col = "y_pred"
@@ -157,10 +159,10 @@ def run_single_case(args):
     # ─── Split Dataset ───
     df_train = df_new.iloc[train_idx]
     df_test = df_new.iloc[test_idx]
-    X_train = df_train.drop(columns=["y_pred"])
-    y_train = df_train["y_pred"]
-    X_test = df_test.drop(columns=["y_pred"])
-    y_test = df_test["y_pred"]
+    X_train = df_train.drop(columns=["filename", "y_pred"])
+    y_train = df_train[target_col]
+    X_test = df_test.drop(columns=["filename", "y_pred"])
+    y_test = df_test[target_col]
 
     # ─── Scaling ───
     scaler_X = StandardScaler().fit(X_train)
