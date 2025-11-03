@@ -148,7 +148,7 @@ class GCMCSampler:
 
         return np.unique(sel)
     def _split_qt_then_rd(self, df: pd.DataFrame, seed_qt: int, seed_rd: int) -> Dict[str, np.ndarray]:
-        """분위 + 랜덤 혼합 샘플링 (qt_frac: 전체 중 분위 샘플 비율)"""
+        """분위 + 랜덤 혼합 샘플링 (qt_frac: 전체 중 분위 샘플 비율 + 히스토그램 저장)"""
         if self.qt_col is None or self.qt_col not in df.columns:
             raise KeyError(f"qt_then_rd requires '{self.qt_col}' column to exist.")
 
@@ -173,7 +173,7 @@ class GCMCSampler:
         test_idx = np.setdiff1d(remain, rd_idx)
         train_idx = np.concatenate([qt_idx, rd_idx])
 
-        # ─── 상세 출력 ───
+        # ─── 상세 로그 ───
         print("\n📊 [GCMCSampler: qt_then_rd]")
         print(f"   Total samples      : {n_total:,}")
         print(f"   Train/Test split   : {len(train_idx):,} / {len(test_idx):,} (target train={self.train_ratio:.2f})")
@@ -183,12 +183,57 @@ class GCMCSampler:
         print(f"   Seeds used         : qt={seed_qt}, rd={seed_rd}")
         print("───────────────────────────────────────────────")
 
+        # ─── 히스토그램 시각화 ───
+        try:
+            import matplotlib.pyplot as plt
+            plt.figure(figsize=(8, 5))
+
+            # 값 변환 (log10)
+            if self.use_log:
+                vals_plot = np.log10(np.clip(vals, a_min=self.log_eps, a_max=None))
+                label_x = f"log10({self.qt_col})"
+            else:
+                vals_plot = vals
+                label_x = self.qt_col
+
+            # 전체 데이터 분포
+            plt.hist(vals_plot, bins=self.n_bins, color="gray", alpha=0.3, label="All data")
+
+            # 분위 샘플
+            qt_vals = vals_plot[qt_idx]
+            plt.hist(qt_vals, bins=self.n_bins, color="orange", alpha=0.6, label="Quantile-sampled")
+
+            # 랜덤 샘플
+            rd_vals = vals_plot[rd_idx]
+            plt.hist(rd_vals, bins=self.n_bins, color="royalblue", alpha=0.6, label="Random-sampled")
+
+            plt.xlabel(label_x)
+            plt.ylabel("Count")
+            plt.title(f"Sampling Distribution — {self.qt_col}")
+            plt.legend()
+            plt.tight_layout()
+
+            # 파일 저장
+            if self.outdir:
+                import os
+                os.makedirs(self.outdir, exist_ok=True)
+                out_path = f"{self.outdir}/sampling_hist_{self.qt_col}.png"
+                plt.savefig(out_path, dpi=300)
+                print(f"📊 Sampling histogram saved → {out_path}")
+            else:
+                plt.show()
+            plt.close()
+
+        except Exception as e:
+            print(f"⚠️ Failed to generate histogram: {e}")
+
         return {
             "train_idx": train_idx,
             "test_idx": test_idx,
             "train_qt_idx": qt_idx,
             "train_rd_idx": rd_idx,
         }
+
 
     # ───────────────────────────────────────────────
     def fit(self, df: pd.DataFrame) -> Dict[str, np.ndarray]:
