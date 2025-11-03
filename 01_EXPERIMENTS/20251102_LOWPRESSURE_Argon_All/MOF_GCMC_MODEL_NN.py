@@ -225,15 +225,26 @@ class MOFModelTrainer:
             )
 
     # ───────────────────────────────────────────────
-    def predict(self, X_test):
+    def predict(self, X_test: pd.DataFrame):
+        """Predict with log + scaling (column order preserved)."""
         X_mod = self._apply_log_to_lowcols(X_test)
+
+        # --- 🔹 컬럼 순서 일치 보장 ---
+        if hasattr(self.scaler_X, "feature_names_in_"):
+            # Fit 당시 순서대로 정렬
+            X_mod = X_mod[self.scaler_X.feature_names_in_]
+        else:
+            X_mod = X_mod[X_mod.columns.sort_values()]
+
         X_proc = self.scaler_X.transform(X_mod)
         X_t = torch.tensor(X_proc, dtype=torch.float32).to(self.device)
+
         self.model.eval()
         with torch.no_grad():
             y_pred_scaled = self.model(X_t).cpu().numpy().ravel()
         y_pred = self.scaler_y.inverse_transform(y_pred_scaled.reshape(-1, 1)).ravel()
         return y_pred
+
 
     # ───────────────────────────────────────────────
     def evaluate(self, X_test, y_true):
