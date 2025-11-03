@@ -41,7 +41,7 @@ for metric, label in zip(metrics, metric_labels):
             closest = sub.iloc[(sub["qt_frac"] - qt).abs().argsort()[:1]]
             values.append(closest[metric].values[0] if not closest.empty else np.nan)
         plt.bar(x + i*width - width, values, width, label=f"qt_frac={qt:.2f}", color=colors[i])
-
+    print(metric)
     plt.xticks(x, [f"{tr:.2f}" for tr in train_ratios])
     plt.xlabel("Train Ratio")
     plt.ylabel(label)
