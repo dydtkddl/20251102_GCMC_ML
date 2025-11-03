@@ -26,12 +26,11 @@ import argparse
 import numpy as np
 import pandas as pd
 import logging
-from sklearn.preprocessing import StandardScaler
 from tqdm import tqdm
 
 from MOF_GCMC_DATALOADER import load_mof_dataset
 from MOF_GCMC_SAMPLER import GCMCSampler
-from MOF_GCMC_MODEL_NN import MOFModelTrainer   # ✅ 뉴럴넷 버전으로 교체
+from MOF_GCMC_MODEL_NN import MOFModelTrainer   # ✅ 뉴럴넷 버전
 
 
 # ───────────────────────────────────────────────
@@ -118,10 +117,6 @@ def run_single_case(args):
     X_test = df_test.drop(columns=[id_col, target_col])
     y_test = df_test[target_col]
 
-    # ─── Scaling ───
-    scaler_X = StandardScaler().fit(X_train)
-    scaler_y = StandardScaler().fit(y_train.values.reshape(-1, 1))
-
     # ─── Neural Network Model Parameters ───
     params = {
         "input_dim": X_train.shape[1],
@@ -133,16 +128,15 @@ def run_single_case(args):
         "epochs": 600,
         "patience": 50,
         "batch_size": 64,
-        # 추가: low-pressure feature 처리
         "low_features": meta.get("lowp_features", []),
-        "apply_log_to_low": len(meta.get("lowp_features", [])) > 0
+        "apply_log_to_low": len(meta.get("lowp_features", [])) > 0,
+        "fit_scaler": True,       # ✅ 내부에서 scaling fit 수행
+        "num_threads": 4          # (optional) CPU thread 제한
     }
 
     trainer = MOFModelTrainer(
         model_type="nn",
         model_params=params,
-        scaler_X=scaler_X,
-        scaler_y=scaler_y,
         outdir=run_dir
     )
 

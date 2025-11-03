@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-MOF_NN_MODEL.py (Extended, Log-aware)
+MOF_NN_MODEL.py (Extended, Log-aware + Auto-scaling)
 ────────────────────────────────────────────
 Residual Neural Network Trainer for MOF-GCMC regression.
 
 Features:
 - Configurable residual MLP
+- Automatic log-transform & scaling (fit_scaler=True)
 - Early stopping
-- Log-transform support for selected features
 - CSV logging (train/val loss)
 - Metrics & prediction saving
 """
@@ -24,6 +24,7 @@ import pandas as pd
 import torch
 import torch.nn as nn
 import torch.optim as optim
+from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 
 # ───────────────────────────────────────────────
@@ -65,24 +66,29 @@ class MOFModelTrainer:
     def __init__(self,
                  model_type: str = "nn",
                  model_params: Optional[Dict] = None,
-                 scaler_X=None,
-                 scaler_y=None,
                  outdir: Optional[str] = None,
                  logger: Optional[logging.Logger] = None,
                  device: Optional[str] = None):
         self.model_type = model_type.lower()
         self.params = model_params or {}
-        self.scaler_X = scaler_X
-        self.scaler_y = scaler_y
         self.outdir = outdir
         self.logger = logger or self._make_logger()
         self.device = device or ("cuda" if torch.cuda.is_available() else "cpu")
         self.model = self._init_model().to(self.device)
         self.criterion = nn.MSELoss()
 
-        # 로그 관련 파라미터
+        # Log transform & scaling options
         self.low_features = self.params.get("low_features", [])
         self.apply_log_to_low = self.params.get("apply_log_to_low", False)
+        self.fit_scaler = self.params.get("fit_scaler", False)
+        self.num_threads = self.params.get("num_threads", 4)
+
+        # CPU thread control
+        torch.set_num_threads(self.num_threads)
+
+        # Scalers (will be fitted internally if fit_scaler=True)
+        self.scaler_X = None
+        self.scaler_y = None
 
     # ───────────────────────────────────────────────
     def _make_logger(self):
@@ -108,7 +114,7 @@ class MOFModelTrainer:
 
     # ───────────────────────────────────────────────
     def _apply_log_to_lowcols(self, df: pd.DataFrame) -> pd.DataFrame:
-        """Log-transform selected low-pressure columns (if enabled)."""
+        """Apply log-transform to designated low-pressure features."""
         if not self.apply_log_to_low or len(self.low_features) == 0:
             return df
         df_mod = df.copy()
@@ -118,34 +124,44 @@ class MOFModelTrainer:
         return df_mod
 
     # ───────────────────────────────────────────────
+    def _prepare_scalers(self, X_train: pd.DataFrame, y_train: pd.Series):
+        """Fit scalers internally (after log-transform)."""
+        X_mod = self._apply_log_to_lowcols(X_train)
+        self.scaler_X = StandardScaler().fit(X_mod)
+        self.scaler_y = StandardScaler().fit(y_train.values.reshape(-1, 1))
+        self.logger.info(f"[SCALE] StandardScaler fitted on log-adjusted X_train.")
+
+    # ───────────────────────────────────────────────
     def fit(self, X_train, y_train, X_val=None, y_val=None):
-        """Train model with early stopping and loss logging."""
-        # 🔹 Low-column log transform
+        """Train model with early stopping, auto-scaling, and log transform."""
+        if self.fit_scaler or (self.scaler_X is None or self.scaler_y is None):
+            self._prepare_scalers(X_train, y_train)
+
+        # Log-transform
         X_train_mod = self._apply_log_to_lowcols(X_train)
         X_val_mod = self._apply_log_to_lowcols(X_val) if X_val is not None else None
 
-        X_train_t = torch.tensor(
-            self.scaler_X.transform(X_train_mod) if self.scaler_X else X_train_mod,
-            dtype=torch.float32
-        ).to(self.device)
-        y_train_t = torch.tensor(
-            self.scaler_y.transform(y_train.values.reshape(-1, 1)).ravel() if self.scaler_y else y_train.values,
-            dtype=torch.float32
-        ).unsqueeze(1).to(self.device)
+        # Scale
+        X_train_scaled = self.scaler_X.transform(X_train_mod)
+        y_train_scaled = self.scaler_y.transform(y_train.values.reshape(-1, 1)).ravel()
 
         if X_val_mod is not None:
-            X_val_t = torch.tensor(
-                self.scaler_X.transform(X_val_mod) if self.scaler_X else X_val_mod,
-                dtype=torch.float32
-            ).to(self.device)
-            y_val_t = torch.tensor(
-                self.scaler_y.transform(y_val.values.reshape(-1, 1)).ravel() if self.scaler_y else y_val.values,
-                dtype=torch.float32
-            ).unsqueeze(1).to(self.device)
+            X_val_scaled = self.scaler_X.transform(X_val_mod)
+            y_val_scaled = self.scaler_y.transform(y_val.values.reshape(-1, 1)).ravel()
+        else:
+            X_val_scaled, y_val_scaled = None, None
+
+        # Tensor
+        X_train_t = torch.tensor(X_train_scaled, dtype=torch.float32).to(self.device)
+        y_train_t = torch.tensor(y_train_scaled, dtype=torch.float32).unsqueeze(1).to(self.device)
+
+        if X_val_scaled is not None:
+            X_val_t = torch.tensor(X_val_scaled, dtype=torch.float32).to(self.device)
+            y_val_t = torch.tensor(y_val_scaled, dtype=torch.float32).unsqueeze(1).to(self.device)
         else:
             X_val_t, y_val_t = None, None
 
-        # ── Train setup ─────────────────────────────
+        # ── Optimizer & loop ─────────────────────────
         lr = self.params.get("lr", 1e-3)
         epochs = self.params.get("epochs", 500)
         patience = self.params.get("patience", 30)
@@ -157,7 +173,7 @@ class MOFModelTrainer:
         best_state = None
         history = []
 
-        self.logger.info(f"[TRAIN] NN | Epochs={epochs} | Batch={batch_size} | LR={lr} | Device={self.device}")
+        self.logger.info(f"[TRAIN] NN | Epochs={epochs} | Batch={batch_size} | LR={lr} | Threads={self.num_threads}")
         self.logger.info(f"[INFO] Log-transform applied to: {self.low_features if self.apply_log_to_low else 'None'}")
 
         t0 = time.time()
@@ -182,11 +198,7 @@ class MOFModelTrainer:
                     val_pred = self.model(X_val_t)
                     val_loss = self.criterion(val_pred, y_val_t).item()
 
-            history.append({
-                "epoch": epoch + 1,
-                "train_loss": train_loss,
-                "val_loss": val_loss
-            })
+            history.append({"epoch": epoch + 1, "train_loss": train_loss, "val_loss": val_loss})
 
             # Early stopping
             target_loss = val_loss if val_loss is not None else train_loss
@@ -215,13 +227,12 @@ class MOFModelTrainer:
     # ───────────────────────────────────────────────
     def predict(self, X_test):
         X_mod = self._apply_log_to_lowcols(X_test)
-        X_proc = self.scaler_X.transform(X_mod) if self.scaler_X else X_mod
+        X_proc = self.scaler_X.transform(X_mod)
         X_t = torch.tensor(X_proc, dtype=torch.float32).to(self.device)
         self.model.eval()
         with torch.no_grad():
-            y_pred = self.model(X_t).cpu().numpy().ravel()
-        if self.scaler_y:
-            y_pred = self.scaler_y.inverse_transform(y_pred.reshape(-1, 1)).ravel()
+            y_pred_scaled = self.model(X_t).cpu().numpy().ravel()
+        y_pred = self.scaler_y.inverse_transform(y_pred_scaled.reshape(-1, 1)).ravel()
         return y_pred
 
     # ───────────────────────────────────────────────
