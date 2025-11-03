@@ -1,0 +1,2004 @@
+.
+├── 1.txt
+├── trainratio_0_05
+│   └── struct_with_input
+│       ├── qtfrac_0_00
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       ├── qtfrac_0_03
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       └── qtfrac_0_05
+│           ├── seed_2025
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2026
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2027
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2028
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           └── seed_2029
+│               ├── feature_importance.csv
+│               ├── logs.txt
+│               ├── metrics.csv
+│               ├── metrics.json
+│               ├── predictions.csv
+│               ├── predictions_full.csv
+│               └── sampling_hist_0.01.png
+├── trainratio_0_10
+│   └── struct_with_input
+│       ├── qtfrac_0_00
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       ├── qtfrac_0_05
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       └── qtfrac_0_10
+│           ├── seed_2025
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2026
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2027
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2028
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           └── seed_2029
+│               ├── feature_importance.csv
+│               ├── logs.txt
+│               ├── metrics.csv
+│               ├── metrics.json
+│               ├── predictions.csv
+│               ├── predictions_full.csv
+│               └── sampling_hist_0.01.png
+├── trainratio_0_15
+│   └── struct_with_input
+│       ├── qtfrac_0_00
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       ├── qtfrac_0_07
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       └── qtfrac_0_15
+│           ├── seed_2025
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2026
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2027
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2028
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           └── seed_2029
+│               ├── feature_importance.csv
+│               ├── logs.txt
+│               ├── metrics.csv
+│               ├── metrics.json
+│               ├── predictions.csv
+│               ├── predictions_full.csv
+│               └── sampling_hist_0.01.png
+├── trainratio_0_20
+│   └── struct_with_input
+│       ├── qtfrac_0_00
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       ├── qtfrac_0_10
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       └── qtfrac_0_20
+│           ├── seed_2025
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2026
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2027
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2028
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           └── seed_2029
+│               ├── feature_importance.csv
+│               ├── logs.txt
+│               ├── metrics.csv
+│               ├── metrics.json
+│               ├── predictions.csv
+│               ├── predictions_full.csv
+│               └── sampling_hist_0.01.png
+├── trainratio_0_25
+│   └── struct_with_input
+│       ├── qtfrac_0_00
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       ├── qtfrac_0_12
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       └── qtfrac_0_25
+│           ├── seed_2025
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2026
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2027
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2028
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           └── seed_2029
+│               ├── feature_importance.csv
+│               ├── logs.txt
+│               ├── metrics.csv
+│               ├── metrics.json
+│               ├── predictions.csv
+│               ├── predictions_full.csv
+│               └── sampling_hist_0.01.png
+├── trainratio_0_30
+│   └── struct_with_input
+│       ├── qtfrac_0_00
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       ├── qtfrac_0_15
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       └── qtfrac_0_30
+│           ├── seed_2025
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2026
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2027
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2028
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           └── seed_2029
+│               ├── feature_importance.csv
+│               ├── logs.txt
+│               ├── metrics.csv
+│               ├── metrics.json
+│               ├── predictions.csv
+│               ├── predictions_full.csv
+│               └── sampling_hist_0.01.png
+├── trainratio_0_35
+│   └── struct_with_input
+│       ├── qtfrac_0_00
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       ├── qtfrac_0_17
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       └── qtfrac_0_35
+│           ├── seed_2025
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2026
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2027
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2028
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           └── seed_2029
+│               ├── feature_importance.csv
+│               ├── logs.txt
+│               ├── metrics.csv
+│               ├── metrics.json
+│               ├── predictions.csv
+│               ├── predictions_full.csv
+│               └── sampling_hist_0.01.png
+├── trainratio_0_40
+│   └── struct_with_input
+│       ├── qtfrac_0_00
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       ├── qtfrac_0_20
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       └── qtfrac_0_40
+│           ├── seed_2025
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2026
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2027
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2028
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           └── seed_2029
+│               ├── feature_importance.csv
+│               ├── logs.txt
+│               ├── metrics.csv
+│               ├── metrics.json
+│               ├── predictions.csv
+│               ├── predictions_full.csv
+│               └── sampling_hist_0.01.png
+├── trainratio_0_45
+│   └── struct_with_input
+│       ├── qtfrac_0_00
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       ├── qtfrac_0_23
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       └── qtfrac_0_45
+│           ├── seed_2025
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2026
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2027
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2028
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           └── seed_2029
+│               ├── feature_importance.csv
+│               ├── logs.txt
+│               ├── metrics.csv
+│               ├── metrics.json
+│               ├── predictions.csv
+│               ├── predictions_full.csv
+│               └── sampling_hist_0.01.png
+├── trainratio_0_50
+│   └── struct_with_input
+│       ├── qtfrac_0_00
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       ├── qtfrac_0_25
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       └── qtfrac_0_50
+│           ├── seed_2025
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2026
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2027
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2028
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           └── seed_2029
+│               ├── feature_importance.csv
+│               ├── logs.txt
+│               ├── metrics.csv
+│               ├── metrics.json
+│               ├── predictions.csv
+│               ├── predictions_full.csv
+│               └── sampling_hist_0.01.png
+├── trainratio_0_55
+│   └── struct_with_input
+│       ├── qtfrac_0_00
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       ├── qtfrac_0_28
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       └── qtfrac_0_55
+│           ├── seed_2025
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2026
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2027
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2028
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           └── seed_2029
+│               ├── feature_importance.csv
+│               ├── logs.txt
+│               ├── metrics.csv
+│               ├── metrics.json
+│               ├── predictions.csv
+│               ├── predictions_full.csv
+│               └── sampling_hist_0.01.png
+├── trainratio_0_60
+│   └── struct_with_input
+│       ├── qtfrac_0_00
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       ├── qtfrac_0_30
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       └── qtfrac_0_60
+│           ├── seed_2025
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2026
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2027
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2028
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           └── seed_2029
+│               ├── feature_importance.csv
+│               ├── logs.txt
+│               ├── metrics.csv
+│               ├── metrics.json
+│               ├── predictions.csv
+│               ├── predictions_full.csv
+│               └── sampling_hist_0.01.png
+├── trainratio_0_65
+│   └── struct_with_input
+│       ├── qtfrac_0_00
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       ├── qtfrac_0_33
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       └── qtfrac_0_65
+│           ├── seed_2025
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2026
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2027
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2028
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           └── seed_2029
+│               ├── feature_importance.csv
+│               ├── logs.txt
+│               ├── metrics.csv
+│               ├── metrics.json
+│               ├── predictions.csv
+│               ├── predictions_full.csv
+│               └── sampling_hist_0.01.png
+├── trainratio_0_70
+│   └── struct_with_input
+│       ├── qtfrac_0_00
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       ├── qtfrac_0_35
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       └── qtfrac_0_70
+│           ├── seed_2025
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2026
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2027
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2028
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           └── seed_2029
+│               ├── feature_importance.csv
+│               ├── logs.txt
+│               ├── metrics.csv
+│               ├── metrics.json
+│               ├── predictions.csv
+│               ├── predictions_full.csv
+│               └── sampling_hist_0.01.png
+├── trainratio_0_75
+│   └── struct_with_input
+│       ├── qtfrac_0_00
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       ├── qtfrac_0_38
+│       │   ├── seed_2025
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2026
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2027
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   ├── seed_2028
+│       │   │   ├── feature_importance.csv
+│       │   │   ├── logs.txt
+│       │   │   ├── metrics.csv
+│       │   │   ├── metrics.json
+│       │   │   ├── predictions.csv
+│       │   │   ├── predictions_full.csv
+│       │   │   └── sampling_hist_0.01.png
+│       │   └── seed_2029
+│       │       ├── feature_importance.csv
+│       │       ├── logs.txt
+│       │       ├── metrics.csv
+│       │       ├── metrics.json
+│       │       ├── predictions.csv
+│       │       ├── predictions_full.csv
+│       │       └── sampling_hist_0.01.png
+│       └── qtfrac_0_75
+│           ├── seed_2025
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2026
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2027
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           ├── seed_2028
+│           │   ├── feature_importance.csv
+│           │   ├── logs.txt
+│           │   ├── metrics.csv
+│           │   ├── metrics.json
+│           │   ├── predictions.csv
+│           │   ├── predictions_full.csv
+│           │   └── sampling_hist_0.01.png
+│           └── seed_2029
+│               ├── feature_importance.csv
+│               ├── logs.txt
+│               ├── metrics.csv
+│               ├── metrics.json
+│               ├── predictions.csv
+│               ├── predictions_full.csv
+│               └── sampling_hist_0.01.png
+└── trainratio_0_80
+    └── struct_with_input
+        ├── qtfrac_0_00
+        │   ├── seed_2025
+        │   │   ├── feature_importance.csv
+        │   │   ├── logs.txt
+        │   │   ├── metrics.csv
+        │   │   ├── metrics.json
+        │   │   ├── predictions.csv
+        │   │   ├── predictions_full.csv
+        │   │   └── sampling_hist_0.01.png
+        │   ├── seed_2026
+        │   │   ├── feature_importance.csv
+        │   │   ├── logs.txt
+        │   │   ├── metrics.csv
+        │   │   ├── metrics.json
+        │   │   ├── predictions.csv
+        │   │   ├── predictions_full.csv
+        │   │   └── sampling_hist_0.01.png
+        │   ├── seed_2027
+        │   │   ├── feature_importance.csv
+        │   │   ├── logs.txt
+        │   │   ├── metrics.csv
+        │   │   ├── metrics.json
+        │   │   ├── predictions.csv
+        │   │   ├── predictions_full.csv
+        │   │   └── sampling_hist_0.01.png
+        │   ├── seed_2028
+        │   │   ├── feature_importance.csv
+        │   │   ├── logs.txt
+        │   │   ├── metrics.csv
+        │   │   ├── metrics.json
+        │   │   ├── predictions.csv
+        │   │   ├── predictions_full.csv
+        │   │   └── sampling_hist_0.01.png
+        │   └── seed_2029
+        │       ├── feature_importance.csv
+        │       ├── logs.txt
+        │       ├── metrics.csv
+        │       ├── metrics.json
+        │       ├── predictions.csv
+        │       ├── predictions_full.csv
+        │       └── sampling_hist_0.01.png
+        ├── qtfrac_0_40
+        │   ├── seed_2025
+        │   │   ├── feature_importance.csv
+        │   │   ├── logs.txt
+        │   │   ├── metrics.csv
+        │   │   ├── metrics.json
+        │   │   ├── predictions.csv
+        │   │   ├── predictions_full.csv
+        │   │   └── sampling_hist_0.01.png
+        │   ├── seed_2026
+        │   │   ├── feature_importance.csv
+        │   │   ├── logs.txt
+        │   │   ├── metrics.csv
+        │   │   ├── metrics.json
+        │   │   ├── predictions.csv
+        │   │   ├── predictions_full.csv
+        │   │   └── sampling_hist_0.01.png
+        │   ├── seed_2027
+        │   │   ├── feature_importance.csv
+        │   │   ├── logs.txt
+        │   │   ├── metrics.csv
+        │   │   ├── metrics.json
+        │   │   ├── predictions.csv
+        │   │   ├── predictions_full.csv
+        │   │   └── sampling_hist_0.01.png
+        │   ├── seed_2028
+        │   │   ├── feature_importance.csv
+        │   │   ├── logs.txt
+        │   │   ├── metrics.csv
+        │   │   ├── metrics.json
+        │   │   ├── predictions.csv
+        │   │   ├── predictions_full.csv
+        │   │   └── sampling_hist_0.01.png
+        │   └── seed_2029
+        │       ├── feature_importance.csv
+        │       ├── logs.txt
+        │       ├── metrics.csv
+        │       ├── metrics.json
+        │       ├── predictions.csv
+        │       ├── predictions_full.csv
+        │       └── sampling_hist_0.01.png
+        └── qtfrac_0_80
+            ├── seed_2025
+            │   ├── feature_importance.csv
+            │   ├── logs.txt
+            │   ├── metrics.csv
+            │   ├── metrics.json
+            │   ├── predictions.csv
+            │   ├── predictions_full.csv
+            │   └── sampling_hist_0.01.png
+            ├── seed_2026
+            │   ├── feature_importance.csv
+            │   ├── logs.txt
+            │   ├── metrics.csv
+            │   ├── metrics.json
+            │   ├── predictions.csv
+            │   ├── predictions_full.csv
+            │   └── sampling_hist_0.01.png
+            ├── seed_2027
+            │   ├── feature_importance.csv
+            │   ├── logs.txt
+            │   ├── metrics.csv
+            │   ├── metrics.json
+            │   ├── predictions.csv
+            │   ├── predictions_full.csv
+            │   └── sampling_hist_0.01.png
+            ├── seed_2028
+            │   ├── feature_importance.csv
+            │   ├── logs.txt
+            │   ├── metrics.csv
+            │   ├── metrics.json
+            │   ├── predictions.csv
+            │   ├── predictions_full.csv
+            │   └── sampling_hist_0.01.png
+            └── seed_2029
+                ├── feature_importance.csv
+                ├── logs.txt
+                ├── metrics.csv
+                ├── metrics.json
+                ├── predictions.csv
+                ├── predictions_full.csv
+                └── sampling_hist_0.01.png
+
+320 directories, 1681 files
