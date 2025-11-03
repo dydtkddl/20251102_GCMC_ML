@@ -42,12 +42,15 @@ for metric, label in zip(metrics, metric_labels):
             values.append(closest[metric].values[0] if not closest.empty else np.nan)
         plt.bar(x + i*width - width, values, width, label=f"qt_frac={qt:.2f}", color=colors[i])
     print(metric)
+
     plt.xticks(x, [f"{tr:.2f}" for tr in train_ratios])
     plt.xlabel("Train Ratio")
     plt.ylabel(label)
     plt.title(f"{label} vs Train Ratio (qt_frac = 0 / mid / full)")
     plt.legend()
     plt.tight_layout()
+    if metric == "R2_mean":
+        plt.ylim(0.8, 1)
     plt.savefig(f"plot_{metric.replace('(', '').replace(')', '').replace('%', 'pct')}.png", dpi=250)
     plt.close()
 
