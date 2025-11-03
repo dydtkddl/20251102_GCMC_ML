@@ -101,7 +101,9 @@ def run_single_case(args):
         qt_frac=args.qt_frac,
         train_ratio=args.train_ratio,
         gamma=0.5,
-        seed_base=args.seed
+        seed_base=args.seed,
+        outdir=run_dir
+
     )
     
     result = sampler.fit(df)
