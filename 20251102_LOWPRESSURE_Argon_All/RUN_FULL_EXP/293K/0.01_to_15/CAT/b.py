@@ -3,25 +3,22 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # ───────────────────────────────────────────────
-# CSV 읽기: 상단 두 줄은 header 정보이므로 skiprows=2
+# CSV 읽기 (첫 2줄 스킵)
 df = pd.read_csv("summary_stats.csv", skiprows=2)
 
-# 기본 구조 확인
-print("✅ Loaded DataFrame:", df.shape)
-print(df.head(3))
+# 수동 컬럼명 복구
+df.columns = [
+    "train_ratio", "qt_frac",
+    "R2_mean", "R2_std",
+    "MAE_mean", "MAE_std",
+    "RMSE_mean", "RMSE_std",
+    "MAPE(%)_mean", "MAPE(%)_std"
+]
 
-# ───────────────────────────────────────────────
-# 타입 변환
 df["train_ratio"] = df["train_ratio"].astype(float)
 df["qt_frac"] = df["qt_frac"].astype(float)
 
 # ───────────────────────────────────────────────
-# Metric 컬럼 이름 정규화
-rename_map = {
-    "MAPE(%)": "MAPE(%)_mean" if "MAPE(%)" in df.columns else None
-}
-df.rename(columns=rename_map, inplace=True)
-
 metrics = ["R2_mean", "MAE_mean", "RMSE_mean", "MAPE(%)_mean"]
 metric_labels = ["R²", "MAE", "RMSE", "MAPE (%)"]
 colors = ["#4C72B0", "#55A868", "#C44E52"]
@@ -29,10 +26,7 @@ colors = ["#4C72B0", "#55A868", "#C44E52"]
 plt.style.use("seaborn-v0_8-whitegrid")
 
 # ───────────────────────────────────────────────
-# Plot 루프
 for metric, label in zip(metrics, metric_labels):
-    if metric not in df.columns:
-        continue
     plt.figure(figsize=(8,5))
 
     train_ratios = sorted(df["train_ratio"].unique())
@@ -44,9 +38,6 @@ for metric, label in zip(metrics, metric_labels):
         values = []
         for tr in train_ratios:
             sub = df[df["train_ratio"] == tr]
-            if sub.empty:
-                values.append(np.nan)
-                continue
             closest = sub.iloc[(sub["qt_frac"] - qt).abs().argsort()[:1]]
             values.append(closest[metric].values[0] if not closest.empty else np.nan)
         plt.bar(x + i*width - width, values, width, label=f"qt_frac={qt:.2f}", color=colors[i])
@@ -60,5 +51,5 @@ for metric, label in zip(metrics, metric_labels):
     plt.savefig(f"plot_{metric.replace('(', '').replace(')', '').replace('%', 'pct')}.png", dpi=250)
     plt.close()
 
-print("✅ All plots saved successfully.")
+print("✅ All plots saved successfully → plot_R2_mean.png ... plot_MAPEpct_mean.png")
 
