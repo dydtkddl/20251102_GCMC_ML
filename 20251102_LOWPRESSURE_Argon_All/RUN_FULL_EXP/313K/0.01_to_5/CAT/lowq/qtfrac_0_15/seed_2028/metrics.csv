@@ -1,2 +1,0 @@
-﻿temp,lowp,outp,seed,mode,qt_frac,train_ratio,out_root,model,R2,MAE,RMSE,MAPE(%)
-313K,0.01,5,2028,lowq,0.15,0.5,./RUN_FULL_EXP,cat,0.9749275496598517,0.04305719874916408,0.005604262741624322,4.012941724599595
