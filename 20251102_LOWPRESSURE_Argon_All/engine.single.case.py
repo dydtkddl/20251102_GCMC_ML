@@ -103,7 +103,10 @@ def run_single_case(args):
         gamma=0.5,
         seed_base=args.seed
     )
+    
     result = sampler.fit(df)
+    sampler.summary(result, df)
+
     train_idx, test_idx = result["train_idx"], result["test_idx"]
 
     df_train, df_test = df.iloc[train_idx], df.iloc[test_idx]

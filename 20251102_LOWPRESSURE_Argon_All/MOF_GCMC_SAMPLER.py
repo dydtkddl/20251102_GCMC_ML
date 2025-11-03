@@ -182,51 +182,6 @@ class GCMCSampler:
         print(f"   Remaining for test : {len(test_idx):,} ({len(test_idx)/n_total:.2%} of total)")
         print(f"   Seeds used         : qt={seed_qt}, rd={seed_rd}")
         print("───────────────────────────────────────────────")
-
-        # ─── 히스토그램 시각화 ───
-        try:
-            import matplotlib.pyplot as plt
-            plt.figure(figsize=(8, 5))
-
-            # 값 변환 (log10)
-            if self.use_log:
-                vals_plot = np.log10(np.clip(vals, a_min=self.log_eps, a_max=None))
-                label_x = f"log10({self.qt_col})"
-            else:
-                vals_plot = vals
-                label_x = self.qt_col
-
-            # 전체 데이터 분포
-            plt.hist(vals_plot, bins=self.n_bins, color="gray", alpha=0.3, label="All data")
-
-            # 분위 샘플
-            qt_vals = vals_plot[qt_idx]
-            plt.hist(qt_vals, bins=self.n_bins, color="orange", alpha=0.6, label="Quantile-sampled")
-
-            # 랜덤 샘플
-            rd_vals = vals_plot[rd_idx]
-            plt.hist(rd_vals, bins=self.n_bins, color="royalblue", alpha=0.6, label="Random-sampled")
-
-            plt.xlabel(label_x)
-            plt.ylabel("Count")
-            plt.title(f"Sampling Distribution — {self.qt_col}")
-            plt.legend()
-            plt.tight_layout()
-
-            # 파일 저장
-            if self.outdir:
-                import os
-                os.makedirs(self.outdir, exist_ok=True)
-                out_path = f"{self.outdir}/sampling_hist_{self.qt_col}.png"
-                plt.savefig(out_path, dpi=300)
-                print(f"📊 Sampling histogram saved → {out_path}")
-            else:
-                plt.show()
-            plt.close()
-
-        except Exception as e:
-            print(f"⚠️ Failed to generate histogram: {e}")
-
         return {
             "train_idx": train_idx,
             "test_idx": test_idx,
