@@ -102,17 +102,19 @@ def run_single_case(args):
     logging.info(f"🚀 Starting QT-based transfer training: {args.target_model.upper()} from {args.source_model.upper()}")
 
     # ─── Load Source Experiment ───
+# ─── Load Source Experiment ───
     metrics_prev, df_pred = load_experiment_result(
         base_dir=args.out_root,
         temp=args.temp,
         lowp=args.lowp,
-        outp=args.outp,
+        outp=args.midp,   # ✅ 중간압 (예: 1bar) 예측 결과를 불러옴
         model=args.source_model,
         train_ratio=args.train_ratio,
         mode=args.mode,
         qt_frac=args.qt_frac,
         seed=args.seed
     )
+
 
     # ─── Load Base Dataset ───
     data_path = f"../../00_GCMC/00_1st_collect/{args.temp}_merged_dataset.exclude.broken_cif.csv"
@@ -221,5 +223,8 @@ if __name__ == "__main__":
                         help="Model used to generate predictions_full.csv")
     parser.add_argument("--target_model", choices=["CAT", "RF", "GBM"], default="CAT",
                         help="Model to train on sampled data")
+    parser.add_argument("--midp", required=True,
+                    help="Intermediate pressure (predicted value used for quantile sampling)")
+
     args = parser.parse_args()
     run_single_case(args)

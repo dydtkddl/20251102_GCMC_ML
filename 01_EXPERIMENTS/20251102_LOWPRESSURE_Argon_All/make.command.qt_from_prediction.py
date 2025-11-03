@@ -45,6 +45,7 @@ for temp, lowp, midp, outp, seed, mode, train_ratio in itertools.product(
             f"--outp {outp} "
             f"--seed {seed} "
             f"--mode {mode} "
+               f"--midp {midp} "
             f"--train_ratio {train_ratio:.2f} "
             f"--qt_frac {qt_frac:.2f} "
             f"--source_model {source_model} "
