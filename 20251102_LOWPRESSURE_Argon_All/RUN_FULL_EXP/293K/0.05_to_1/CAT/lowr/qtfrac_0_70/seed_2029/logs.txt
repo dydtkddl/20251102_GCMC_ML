@@ -1,8 +1,0 @@
-2025-11-03 01:36:37,968 | INFO | Logging started → ./RUN_FULL_EXP/293K/0.05_to_1/CAT/lowr/qtfrac_0_70/seed_2029/logs.txt
-2025-11-03 01:36:37,969 | INFO | 🚀 Starting: 293K | 0.05_to_1 | mode=lowr | qt_frac=0.70 | seed=2029
-2025-11-03 01:36:38,018 | INFO | [TRAIN] Model=CAT | Samples=3632 | Features=13
-2025-11-03 01:36:41,301 | INFO | [TIME] Training took 3.28 s
-2025-11-03 01:36:41,308 | INFO | [EVAL] R2=0.9723 | MAE=0.0117 | RMSE=0.0019 | MAPE=3.00%
-2025-11-03 01:36:41,358 | INFO | [SAVE] predictions → ./RUN_FULL_EXP/293K/0.05_to_1/CAT/lowr/qtfrac_0_70/seed_2029/predictions.csv
-2025-11-03 01:36:41,450 | INFO | [SAVE] full predictions → ./RUN_FULL_EXP/293K/0.05_to_1/CAT/lowr/qtfrac_0_70/seed_2029/predictions_full.csv
-2025-11-03 01:36:41,452 | INFO | ✅ Finished case. Results saved at ./RUN_FULL_EXP/293K/0.05_to_1/CAT/lowr/qtfrac_0_70/seed_2029
