@@ -70,7 +70,7 @@ def merge_with_base_dataset(df_pred, df_base, meta):
     id_col = meta["meta_columns"][0]
     target_col = meta["output_features"][0]
     df_base = df_base[[id_col, target_col]]
-    df_merged = pd.merge(df_pred, df_base, how="left", on="filename")
+    df_merged = pd.merge(df_pred, df_base, how="inner", on="filename")
 
     # drop_cols = ["y_true", "Split", id_col]
     drop_cols = ["y_true", "Split"]
@@ -159,9 +159,9 @@ def run_single_case(args):
     # ─── Split Dataset ───
     df_train = df_new.iloc[train_idx]
     df_test = df_new.iloc[test_idx]
-    X_train = df_train.drop(columns=["filename", "y_pred"])
+    X_train = df_train.drop(columns=["filename", target_col])
     y_train = df_train[target_col]
-    X_test = df_test.drop(columns=["filename", "y_pred"])
+    X_test = df_test.drop(columns=["filename", target_col])
     y_test = df_test[target_col]
 
     # ─── Scaling ───
@@ -194,8 +194,8 @@ def run_single_case(args):
     trainer.feature_importance(X_test, y_test)
     trainer.save_predictions(X_test, y_test)
     trainer.save_predictions_full(
-        X_full=df_new.drop(columns=[]),
-        y_full=df_new["y_pred"],
+        X_full=df_new.drop(columns=[target_col]),
+        y_full=df_new[target_col],
         train_idx=train_idx,
         test_idx=test_idx,
         id_col="filename"
