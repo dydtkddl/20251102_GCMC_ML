@@ -69,10 +69,11 @@ def merge_with_base_dataset(df_pred, df_base, meta):
     """Merge predictions_full.csv with base GCMC dataset."""
     id_col = meta["meta_columns"][0]
     target_col = meta["output_features"][0]
+    df_base = df_base[[id_col, target_col]]
+    df_merged = pd.merge(df_pred, df_base, how="left", on="filename")
 
-    df_merged = pd.merge(df_pred, df_base, how="left", left_on="filename", right_on=id_col)
-
-    drop_cols = ["y_true", "Split", id_col]
+    # drop_cols = ["y_true", "Split", id_col]
+    drop_cols = ["y_true", "Split"]
     df_merged = df_merged.drop(columns=[c for c in drop_cols if c in df_merged.columns], errors="ignore")
 
     logging.info(f"✅ Merged dataset shape: {df_merged.shape}")
@@ -126,7 +127,6 @@ def run_single_case(args):
         lowp_features=[args.lowp],
         output_features=[args.outp]
     )
-
     # ─── Merge with Base ───
     df_new = merge_with_base_dataset(df_pred, df_base, meta)
 
@@ -141,7 +141,7 @@ def run_single_case(args):
     sampler = GCMCSampler(
         sampler_type="qt_then_rd",
         qt_col=qt_col,
-        use_log=False,
+        use_log=True,
         n_bins=100,
         qt_frac=args.qt_frac,
         train_ratio=args.train_ratio,
