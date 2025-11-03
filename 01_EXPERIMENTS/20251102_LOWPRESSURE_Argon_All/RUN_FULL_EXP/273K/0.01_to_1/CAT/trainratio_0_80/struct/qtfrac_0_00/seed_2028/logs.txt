@@ -1,0 +1,8 @@
+2025-11-04 01:41:24,679 | INFO | Logging started → ./RUN_FULL_EXP/273K/0.01_to_1/CAT/trainratio_0_80/struct/qtfrac_0_00/seed_2028/logs.txt
+2025-11-04 01:41:24,679 | INFO | 🚀 Starting: 273K | 0.01_to_1 | mode=struct | qt_frac=0.00 | seed=2028
+2025-11-04 01:41:24,714 | INFO | [TRAIN] Model=CAT | Samples=6111 | Features=12
+2025-11-04 01:41:27,398 | INFO | [TIME] Training took 2.68 s
+2025-11-04 01:41:27,410 | INFO | [EVAL] R2=0.3839 | MAE=0.1835 | RMSE=0.0912 | MAPE=58.06%
+2025-11-04 01:41:27,429 | INFO | [SAVE] predictions → ./RUN_FULL_EXP/273K/0.01_to_1/CAT/trainratio_0_80/struct/qtfrac_0_00/seed_2028/predictions.csv
+2025-11-04 01:41:27,494 | INFO | [SAVE] full predictions → ./RUN_FULL_EXP/273K/0.01_to_1/CAT/trainratio_0_80/struct/qtfrac_0_00/seed_2028/predictions_full.csv
+2025-11-04 01:41:27,496 | INFO | ✅ Finished case. Results saved at ./RUN_FULL_EXP/273K/0.01_to_1/CAT/trainratio_0_80/struct/qtfrac_0_00/seed_2028

@@ -109,6 +109,7 @@ def run_single_case(args):
     
     result = sampler.fit(df)
     sampler.summary(result, df)
+    print(1111111111)
 
     train_idx, test_idx = result["train_idx"], result["test_idx"]
 

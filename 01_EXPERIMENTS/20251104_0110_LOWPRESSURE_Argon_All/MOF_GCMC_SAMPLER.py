@@ -213,6 +213,7 @@ class GCMCSampler:
     # ───────────────────────────────────────────────
     def summary(self, result: Dict[str, np.ndarray], df: Optional[pd.DataFrame] = None) -> None:
         """샘플링 결과 통계 + 시각화"""
+        print(222)
         n_tr = len(result["train_idx"])
         n_te = len(result["test_idx"])
         qt_n = len(result["train_qt_idx"]) if result["train_qt_idx"] is not None else 0
@@ -251,7 +252,7 @@ class GCMCSampler:
         plt.title(f"Sampling Distribution — {self.qt_col}")
         plt.legend()
         plt.tight_layout()
-
+        print(222)
         if self.outdir:
             import os
             os.makedirs(self.outdir, exist_ok=True)

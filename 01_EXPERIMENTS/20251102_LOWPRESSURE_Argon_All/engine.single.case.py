@@ -68,7 +68,7 @@ def run_single_case(args):
     logging.info(f"🚀 Starting: {args.temp} | {combo} | mode={args.mode} | qt_frac={args.qt_frac:.2f} | seed={args.seed}")
 
     # ─── Load dataset ───
-    data_path = f"../{args.temp}_merged_dataset.exclude.broken_cif.csv"
+    data_path = f"../../00_GCMC/00_1st_collect/{args.temp}_merged_dataset.exclude.broken_cif.csv"
     if not os.path.exists(data_path):
         logging.error(f"Dataset not found: {data_path}")
         return
