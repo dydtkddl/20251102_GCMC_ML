@@ -1,0 +1,13 @@
+2025-11-04 03:55:29,043 | INFO | Logging started → ./RUN_FULL_EXP/293K/0.01_to_5/CAT_QTfrom_CAT/trainratio_0_55/struct_with_input/qtfrac_0_55/seed_2026/logs.txt
+2025-11-04 03:55:29,043 | INFO | 🚀 Starting QT-based transfer training: CAT from CAT
+2025-11-04 03:55:29,058 | INFO | ✅ Loaded prior model results: ./RUN_FULL_EXP/293K/0.01_to_5/CAT/trainratio_0_55/struct_with_input/qtfrac_0_55/seed_2026
+2025-11-04 03:55:29,059 | INFO | 📈 R2=0.9706 | MAE=0.0613 | RMSE=0.0084
+2025-11-04 03:55:29,089 | INFO | ✅ Merged dataset shape: (7263, 28)
+2025-11-04 03:55:29,089 | INFO | 📊 Using y_pred as quantile column for sampling
+2025-11-04 03:55:29,574 | INFO | [TRAIN] Model=CAT | Samples=3995 | Features=27
+2025-11-04 03:55:33,944 | INFO | [TIME] Training took 4.37 s
+2025-11-04 03:55:33,956 | INFO | [EVAL] R2=0.9938 | MAE=0.0263 | RMSE=0.0016 | MAPE=2.06%
+2025-11-04 03:55:34,016 | INFO | [SAVE] predictions → ./RUN_FULL_EXP/293K/0.01_to_5/CAT_QTfrom_CAT/trainratio_0_55/struct_with_input/qtfrac_0_55/seed_2026/predictions.csv
+2025-11-04 03:55:34,027 | WARNING | [WARN] id_col 'filename' not found in X_full
+2025-11-04 03:55:34,126 | INFO | [SAVE] full predictions → ./RUN_FULL_EXP/293K/0.01_to_5/CAT_QTfrom_CAT/trainratio_0_55/struct_with_input/qtfrac_0_55/seed_2026/predictions_full.csv
+2025-11-04 03:55:34,127 | INFO | ✅ Finished QT-based retraining. Results saved → ./RUN_FULL_EXP/293K/0.01_to_5/CAT_QTfrom_CAT/trainratio_0_55/struct_with_input/qtfrac_0_55/seed_2026

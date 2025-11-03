@@ -34,7 +34,7 @@ for temp, lowp, outp, seed, mode, train_ratio in itertools.product(
         commands.append(cmd)
 
 # 저장
-with open("commands.txt", "w", encoding="utf-8") as f:
+with open("commands.NN.txt", "w", encoding="utf-8") as f:
     f.write("\n".join(commands))
 
 print(f"✅ Generated {len(commands)} NN commands → commands.txt")

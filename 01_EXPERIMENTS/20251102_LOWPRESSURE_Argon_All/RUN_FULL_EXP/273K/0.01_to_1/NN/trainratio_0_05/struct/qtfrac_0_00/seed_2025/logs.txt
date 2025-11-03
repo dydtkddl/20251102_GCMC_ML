@@ -1,0 +1,8 @@
+2025-11-04 02:54:46,063 | INFO | Logging started → ./RUN_FULL_EXP/273K/0.01_to_1/NN/trainratio_0_05/struct/qtfrac_0_00/seed_2025/logs.txt
+2025-11-04 02:54:46,063 | INFO | 🚀 Starting NN: 273K | 0.01_to_1 | mode=struct | qt_frac=0.00 | seed=2025
+2025-11-04 02:54:46,962 | INFO | [TRAIN] NN | Epochs=600 | Batch=64 | LR=0.001 | Device=cpu
+2025-11-04 02:54:46,962 | INFO | [INFO] Log-transform applied to: None
+2025-11-04 02:54:48,800 | INFO | ⏹ Early stopping at epoch 58
+2025-11-04 02:54:48,801 | INFO | [TIME] Training took 1.84s
+2025-11-04 02:54:48,824 | INFO | [EVAL] R2=-0.0109 | MAE=0.2211 | RMSE=0.1551 | MAPE=50.07%
+2025-11-04 02:54:48,913 | INFO | [SAVE] predictions → ./RUN_FULL_EXP/273K/0.01_to_1/NN/trainratio_0_05/struct/qtfrac_0_00/seed_2025/predictions.csv
