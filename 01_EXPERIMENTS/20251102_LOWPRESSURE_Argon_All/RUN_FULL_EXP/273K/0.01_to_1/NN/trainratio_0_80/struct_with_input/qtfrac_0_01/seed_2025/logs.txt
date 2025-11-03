@@ -1,0 +1,9 @@
+2025-11-04 03:03:43,483 | INFO | Logging started → ./RUN_FULL_EXP/273K/0.01_to_1/NN/trainratio_0_80/struct_with_input/qtfrac_0_01/seed_2025/logs.txt
+2025-11-04 03:03:43,483 | INFO | 🚀 Starting NN: 273K | 0.01_to_1 | mode=struct_with_input | qt_frac=0.01 | seed=2025
+2025-11-04 03:03:44,003 | INFO | [SCALE] StandardScaler fitted on log-adjusted X_train.
+2025-11-04 03:03:44,826 | INFO | [TRAIN] NN | Epochs=600 | Batch=64 | LR=0.001 | Threads=4
+2025-11-04 03:03:44,826 | INFO | [INFO] Log-transform applied to: ['0.01']
+2025-11-04 03:03:59,179 | INFO | ⏹ Early stopping at epoch 75
+2025-11-04 03:03:59,180 | INFO | [TIME] Training took 14.35s
+2025-11-04 03:03:59,193 | INFO | [EVAL] R2=0.9520 | MAE=0.0271 | RMSE=0.0071 | MAPE=4.76%
+2025-11-04 03:03:59,208 | INFO | [SAVE] predictions → ./RUN_FULL_EXP/273K/0.01_to_1/NN/trainratio_0_80/struct_with_input/qtfrac_0_01/seed_2025/predictions.csv

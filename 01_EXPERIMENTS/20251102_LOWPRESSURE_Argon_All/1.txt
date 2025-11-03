@@ -1,0 +1,2251 @@
+.
+├── 1.txt
+├── catboost_info
+│   ├── catboost_training.json
+│   ├── learn
+│   │   └── events.out.tfevents
+│   ├── learn_error.tsv
+│   ├── time_left.tsv
+│   └── tmp
+│       ├── cat_feature_index.11c826a3-496a2165-e709b031-73b7a8fc.tmp
+│       ├── cat_feature_index.13794584-518da82a-41ccb5a1-cc111405.tmp
+│       ├── cat_feature_index.16b57f8c-ab1ad5-1b29b39f-701102dc.tmp
+│       ├── cat_feature_index.220deb7c-201dd859-c2b5b45c-a65f077b.tmp
+│       ├── cat_feature_index.2537f279-8d85293b-573ec3d4-bf8e33be.tmp
+│       ├── cat_feature_index.2d6c9dd3-25d1b495-620f4dbb-4f66d159.tmp
+│       ├── cat_feature_index.328957cf-8bd7d50a-fb4e4d34-ead9318a.tmp
+│       ├── cat_feature_index.328f0c1c-8322213f-24d829fa-a6ecdc4b.tmp
+│       ├── cat_feature_index.3e404b25-b00a3afb-698e76b2-d46b5fcb.tmp
+│       ├── cat_feature_index.4b4e51fb-1d13bd7a-7a7efe03-3b3fca5c.tmp
+│       ├── cat_feature_index.57222016-5bb6d7e4-30def98d-9eff7faf.tmp
+│       ├── cat_feature_index.586beee8-f0f4ae06-26808bf0-bd6e34d4.tmp
+│       ├── cat_feature_index.5ae74fdf-ec5d3e11-603cde71-62fac9ee.tmp
+│       ├── cat_feature_index.627ca104-9caa9d1-78eabbfd-ae0cc129.tmp
+│       ├── cat_feature_index.6ad7879-79ae6ab2-e8b7b0cd-38d38b2c.tmp
+│       ├── cat_feature_index.7491c591-3690faf4-3447635-65f1ca8.tmp
+│       ├── cat_feature_index.7cbeb831-c225735d-b3dc37b3-50c3bab0.tmp
+│       ├── cat_feature_index.7f35f6ef-fffb4ffc-1ce15b7f-ec028e82.tmp
+│       ├── cat_feature_index.8471c205-6cea8e1e-f6664287-d7ed3326.tmp
+│       ├── cat_feature_index.886ffd5-33caf281-20ac9ef7-9509dc8.tmp
+│       ├── cat_feature_index.8e09c72-c42801a6-674d3bb-95a9c1da.tmp
+│       ├── cat_feature_index.8f759df3-eea34b26-244404b2-6954f0b.tmp
+│       ├── cat_feature_index.92ab8e63-108e50c7-3f32064c-cc4164ae.tmp
+│       ├── cat_feature_index.9b879c88-e974b584-fe34b51a-8f5bc027.tmp
+│       ├── cat_feature_index.a2ad2e50-48ad1b39-2f792a7d-4fdd0192.tmp
+│       ├── cat_feature_index.aae4748c-3084e906-cc40dbaf-c4761c96.tmp
+│       ├── cat_feature_index.ae2563cd-73757969-2d4a4d78-af367bf9.tmp
+│       ├── cat_feature_index.b398f01-723bb-808c268c-c602ab5d.tmp
+│       ├── cat_feature_index.bbdb4748-d9f05650-a2b9d3da-6915bb1.tmp
+│       ├── cat_feature_index.bf7ac2e1-9e6552a9-f3292cad-970c8611.tmp
+│       ├── cat_feature_index.c46c3d79-a483d304-73f40745-c83e6be4.tmp
+│       ├── cat_feature_index.cc2d3231-8947b8ac-64d73370-e72e2fe.tmp
+│       ├── cat_feature_index.cdf54bb6-864133a6-629e0eec-964c3264.tmp
+│       ├── cat_feature_index.d352435c-2c2e70f1-52f6c355-2c50cc47.tmp
+│       ├── cat_feature_index.d6cbed11-1168797b-869430ce-8a741da2.tmp
+│       ├── cat_feature_index.df395cb9-77024555-31fc6e35-abff382a.tmp
+│       ├── cat_feature_index.ea1e2adf-13a20cb4-86dbd084-a8d73060.tmp
+│       └── cat_feature_index.ef28bbc7-9496f7dd-13b5f2f3-9e4fd96c.tmp
+├── commands.NN.txt
+├── commands.txt
+├── engine.single.case.NN.py
+├── engine.single.case.py
+├── make.command.2.NN.py
+├── make.command.2.py
+├── make.command.py
+├── MOF_GCMC_DATALOADER.py
+├── MOF_GCMC_MODEL_NN.py
+├── MOF_GCMC_MODEL.py
+├── MOF_GCMC_SAMPLER.py
+├── nohup.out
+├── __pycache__
+│   ├── MOF_GCMC_DATALOADER.cpython-312.pyc
+│   ├── MOF_GCMC_DATALOADER.cpython-38.pyc
+│   ├── MOF_GCMC_MODEL.cpython-312.pyc
+│   ├── MOF_GCMC_MODEL.cpython-38.pyc
+│   ├── MOF_GCMC_MODEL_NN.cpython-312.pyc
+│   ├── MOF_GCMC_SAMPLER.cpython-312.pyc
+│   └── MOF_GCMC_SAMPLER.cpython-38.pyc
+├── RUN_FULL_EXP
+│   ├── 273K
+│   │   ├── 0.01_to_1
+│   │   │   ├── CAT
+│   │   │   │   ├── a.py
+│   │   │   │   ├── b.py
+│   │   │   │   ├── plot_MAE_mean.png
+│   │   │   │   ├── plot_MAPEpct_mean.png
+│   │   │   │   ├── plot_R2_mean.png
+│   │   │   │   ├── plot_RMSE_mean.png
+│   │   │   │   ├── summary_raw.csv
+│   │   │   │   ├── summary_stats.csv
+│   │   │   │   ├── trainratio_0_05
+│   │   │   │   │   ├── struct
+│   │   │   │   │   │   └── qtfrac_0_00
+│   │   │   │   │   │       ├── seed_2025
+│   │   │   │   │   │       ├── seed_2026
+│   │   │   │   │   │       ├── seed_2027
+│   │   │   │   │   │       ├── seed_2028
+│   │   │   │   │   │       └── seed_2029
+│   │   │   │   │   └── struct_with_input
+│   │   │   │   │       ├── qtfrac_0_00
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       ├── qtfrac_0_03
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       └── qtfrac_0_05
+│   │   │   │   │           ├── seed_2025
+│   │   │   │   │           ├── seed_2026
+│   │   │   │   │           ├── seed_2027
+│   │   │   │   │           ├── seed_2028
+│   │   │   │   │           └── seed_2029
+│   │   │   │   ├── trainratio_0_10
+│   │   │   │   │   ├── struct
+│   │   │   │   │   │   └── qtfrac_0_00
+│   │   │   │   │   │       ├── seed_2025
+│   │   │   │   │   │       ├── seed_2026
+│   │   │   │   │   │       ├── seed_2027
+│   │   │   │   │   │       ├── seed_2028
+│   │   │   │   │   │       └── seed_2029
+│   │   │   │   │   └── struct_with_input
+│   │   │   │   │       ├── qtfrac_0_00
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       ├── qtfrac_0_05
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       └── qtfrac_0_10
+│   │   │   │   │           ├── seed_2025
+│   │   │   │   │           ├── seed_2026
+│   │   │   │   │           ├── seed_2027
+│   │   │   │   │           ├── seed_2028
+│   │   │   │   │           └── seed_2029
+│   │   │   │   ├── trainratio_0_15
+│   │   │   │   │   ├── struct
+│   │   │   │   │   │   └── qtfrac_0_00
+│   │   │   │   │   │       ├── seed_2025
+│   │   │   │   │   │       ├── seed_2026
+│   │   │   │   │   │       ├── seed_2027
+│   │   │   │   │   │       ├── seed_2028
+│   │   │   │   │   │       └── seed_2029
+│   │   │   │   │   └── struct_with_input
+│   │   │   │   │       ├── qtfrac_0_00
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       ├── qtfrac_0_07
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       └── qtfrac_0_15
+│   │   │   │   │           ├── seed_2025
+│   │   │   │   │           ├── seed_2026
+│   │   │   │   │           ├── seed_2027
+│   │   │   │   │           ├── seed_2028
+│   │   │   │   │           └── seed_2029
+│   │   │   │   ├── trainratio_0_20
+│   │   │   │   │   ├── struct
+│   │   │   │   │   │   └── qtfrac_0_00
+│   │   │   │   │   │       ├── seed_2025
+│   │   │   │   │   │       ├── seed_2026
+│   │   │   │   │   │       ├── seed_2027
+│   │   │   │   │   │       ├── seed_2028
+│   │   │   │   │   │       └── seed_2029
+│   │   │   │   │   └── struct_with_input
+│   │   │   │   │       ├── qtfrac_0_00
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       ├── qtfrac_0_10
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       └── qtfrac_0_20
+│   │   │   │   │           ├── seed_2025
+│   │   │   │   │           ├── seed_2026
+│   │   │   │   │           ├── seed_2027
+│   │   │   │   │           ├── seed_2028
+│   │   │   │   │           └── seed_2029
+│   │   │   │   ├── trainratio_0_25
+│   │   │   │   │   ├── struct
+│   │   │   │   │   │   └── qtfrac_0_00
+│   │   │   │   │   │       ├── seed_2025
+│   │   │   │   │   │       ├── seed_2026
+│   │   │   │   │   │       ├── seed_2027
+│   │   │   │   │   │       ├── seed_2028
+│   │   │   │   │   │       └── seed_2029
+│   │   │   │   │   └── struct_with_input
+│   │   │   │   │       ├── qtfrac_0_00
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       ├── qtfrac_0_12
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       └── qtfrac_0_25
+│   │   │   │   │           ├── seed_2025
+│   │   │   │   │           ├── seed_2026
+│   │   │   │   │           ├── seed_2027
+│   │   │   │   │           ├── seed_2028
+│   │   │   │   │           └── seed_2029
+│   │   │   │   ├── trainratio_0_30
+│   │   │   │   │   ├── struct
+│   │   │   │   │   │   └── qtfrac_0_00
+│   │   │   │   │   │       ├── seed_2025
+│   │   │   │   │   │       ├── seed_2026
+│   │   │   │   │   │       ├── seed_2027
+│   │   │   │   │   │       ├── seed_2028
+│   │   │   │   │   │       └── seed_2029
+│   │   │   │   │   └── struct_with_input
+│   │   │   │   │       ├── qtfrac_0_00
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       ├── qtfrac_0_15
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       └── qtfrac_0_30
+│   │   │   │   │           ├── seed_2025
+│   │   │   │   │           ├── seed_2026
+│   │   │   │   │           ├── seed_2027
+│   │   │   │   │           ├── seed_2028
+│   │   │   │   │           └── seed_2029
+│   │   │   │   ├── trainratio_0_35
+│   │   │   │   │   ├── struct
+│   │   │   │   │   │   └── qtfrac_0_00
+│   │   │   │   │   │       ├── seed_2025
+│   │   │   │   │   │       ├── seed_2026
+│   │   │   │   │   │       ├── seed_2027
+│   │   │   │   │   │       ├── seed_2028
+│   │   │   │   │   │       └── seed_2029
+│   │   │   │   │   └── struct_with_input
+│   │   │   │   │       ├── qtfrac_0_00
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       ├── qtfrac_0_17
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       └── qtfrac_0_35
+│   │   │   │   │           ├── seed_2025
+│   │   │   │   │           ├── seed_2026
+│   │   │   │   │           ├── seed_2027
+│   │   │   │   │           ├── seed_2028
+│   │   │   │   │           └── seed_2029
+│   │   │   │   ├── trainratio_0_40
+│   │   │   │   │   ├── struct
+│   │   │   │   │   │   └── qtfrac_0_00
+│   │   │   │   │   │       ├── seed_2025
+│   │   │   │   │   │       ├── seed_2026
+│   │   │   │   │   │       ├── seed_2027
+│   │   │   │   │   │       ├── seed_2028
+│   │   │   │   │   │       └── seed_2029
+│   │   │   │   │   └── struct_with_input
+│   │   │   │   │       ├── qtfrac_0_00
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       ├── qtfrac_0_20
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       └── qtfrac_0_40
+│   │   │   │   │           ├── seed_2025
+│   │   │   │   │           ├── seed_2026
+│   │   │   │   │           ├── seed_2027
+│   │   │   │   │           ├── seed_2028
+│   │   │   │   │           └── seed_2029
+│   │   │   │   ├── trainratio_0_45
+│   │   │   │   │   ├── struct
+│   │   │   │   │   │   └── qtfrac_0_00
+│   │   │   │   │   │       ├── seed_2025
+│   │   │   │   │   │       ├── seed_2026
+│   │   │   │   │   │       ├── seed_2027
+│   │   │   │   │   │       ├── seed_2028
+│   │   │   │   │   │       └── seed_2029
+│   │   │   │   │   └── struct_with_input
+│   │   │   │   │       ├── qtfrac_0_00
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       ├── qtfrac_0_23
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       └── qtfrac_0_45
+│   │   │   │   │           ├── seed_2025
+│   │   │   │   │           ├── seed_2026
+│   │   │   │   │           ├── seed_2027
+│   │   │   │   │           ├── seed_2028
+│   │   │   │   │           └── seed_2029
+│   │   │   │   ├── trainratio_0_50
+│   │   │   │   │   ├── struct
+│   │   │   │   │   │   └── qtfrac_0_00
+│   │   │   │   │   │       ├── seed_2025
+│   │   │   │   │   │       ├── seed_2026
+│   │   │   │   │   │       ├── seed_2027
+│   │   │   │   │   │       ├── seed_2028
+│   │   │   │   │   │       └── seed_2029
+│   │   │   │   │   └── struct_with_input
+│   │   │   │   │       ├── qtfrac_0_00
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       ├── qtfrac_0_25
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       └── qtfrac_0_50
+│   │   │   │   │           ├── seed_2025
+│   │   │   │   │           ├── seed_2026
+│   │   │   │   │           ├── seed_2027
+│   │   │   │   │           ├── seed_2028
+│   │   │   │   │           └── seed_2029
+│   │   │   │   ├── trainratio_0_55
+│   │   │   │   │   ├── struct
+│   │   │   │   │   │   └── qtfrac_0_00
+│   │   │   │   │   │       ├── seed_2025
+│   │   │   │   │   │       ├── seed_2026
+│   │   │   │   │   │       ├── seed_2027
+│   │   │   │   │   │       ├── seed_2028
+│   │   │   │   │   │       └── seed_2029
+│   │   │   │   │   └── struct_with_input
+│   │   │   │   │       ├── qtfrac_0_00
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       ├── qtfrac_0_28
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       └── qtfrac_0_55
+│   │   │   │   │           ├── seed_2025
+│   │   │   │   │           ├── seed_2026
+│   │   │   │   │           ├── seed_2027
+│   │   │   │   │           ├── seed_2028
+│   │   │   │   │           └── seed_2029
+│   │   │   │   ├── trainratio_0_60
+│   │   │   │   │   ├── struct
+│   │   │   │   │   │   └── qtfrac_0_00
+│   │   │   │   │   │       ├── seed_2025
+│   │   │   │   │   │       ├── seed_2026
+│   │   │   │   │   │       ├── seed_2027
+│   │   │   │   │   │       ├── seed_2028
+│   │   │   │   │   │       └── seed_2029
+│   │   │   │   │   └── struct_with_input
+│   │   │   │   │       ├── qtfrac_0_00
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       ├── qtfrac_0_30
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       └── qtfrac_0_60
+│   │   │   │   │           ├── seed_2025
+│   │   │   │   │           ├── seed_2026
+│   │   │   │   │           ├── seed_2027
+│   │   │   │   │           ├── seed_2028
+│   │   │   │   │           └── seed_2029
+│   │   │   │   ├── trainratio_0_65
+│   │   │   │   │   ├── struct
+│   │   │   │   │   │   └── qtfrac_0_00
+│   │   │   │   │   │       ├── seed_2025
+│   │   │   │   │   │       ├── seed_2026
+│   │   │   │   │   │       ├── seed_2027
+│   │   │   │   │   │       ├── seed_2028
+│   │   │   │   │   │       └── seed_2029
+│   │   │   │   │   └── struct_with_input
+│   │   │   │   │       ├── qtfrac_0_00
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       ├── qtfrac_0_33
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       └── qtfrac_0_65
+│   │   │   │   │           ├── seed_2025
+│   │   │   │   │           ├── seed_2026
+│   │   │   │   │           ├── seed_2027
+│   │   │   │   │           ├── seed_2028
+│   │   │   │   │           └── seed_2029
+│   │   │   │   ├── trainratio_0_70
+│   │   │   │   │   ├── struct
+│   │   │   │   │   │   └── qtfrac_0_00
+│   │   │   │   │   │       ├── seed_2025
+│   │   │   │   │   │       ├── seed_2026
+│   │   │   │   │   │       ├── seed_2027
+│   │   │   │   │   │       ├── seed_2028
+│   │   │   │   │   │       └── seed_2029
+│   │   │   │   │   └── struct_with_input
+│   │   │   │   │       ├── qtfrac_0_00
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       ├── qtfrac_0_35
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       └── qtfrac_0_70
+│   │   │   │   │           ├── seed_2025
+│   │   │   │   │           ├── seed_2026
+│   │   │   │   │           ├── seed_2027
+│   │   │   │   │           ├── seed_2028
+│   │   │   │   │           └── seed_2029
+│   │   │   │   ├── trainratio_0_75
+│   │   │   │   │   ├── struct
+│   │   │   │   │   │   └── qtfrac_0_00
+│   │   │   │   │   │       ├── seed_2025
+│   │   │   │   │   │       ├── seed_2026
+│   │   │   │   │   │       ├── seed_2027
+│   │   │   │   │   │       ├── seed_2028
+│   │   │   │   │   │       └── seed_2029
+│   │   │   │   │   └── struct_with_input
+│   │   │   │   │       ├── qtfrac_0_00
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       ├── qtfrac_0_38
+│   │   │   │   │       │   ├── seed_2025
+│   │   │   │   │       │   ├── seed_2026
+│   │   │   │   │       │   ├── seed_2027
+│   │   │   │   │       │   ├── seed_2028
+│   │   │   │   │       │   └── seed_2029
+│   │   │   │   │       └── qtfrac_0_75
+│   │   │   │   │           ├── seed_2025
+│   │   │   │   │           ├── seed_2026
+│   │   │   │   │           ├── seed_2027
+│   │   │   │   │           ├── seed_2028
+│   │   │   │   │           └── seed_2029
+│   │   │   │   └── trainratio_0_80
+│   │   │   │       ├── struct
+│   │   │   │       │   └── qtfrac_0_00
+│   │   │   │       │       ├── seed_2025
+│   │   │   │       │       ├── seed_2026
+│   │   │   │       │       ├── seed_2027
+│   │   │   │       │       ├── seed_2028
+│   │   │   │       │       └── seed_2029
+│   │   │   │       └── struct_with_input
+│   │   │   │           ├── qtfrac_0_00
+│   │   │   │           │   ├── seed_2025
+│   │   │   │           │   ├── seed_2026
+│   │   │   │           │   ├── seed_2027
+│   │   │   │           │   ├── seed_2028
+│   │   │   │           │   └── seed_2029
+│   │   │   │           ├── qtfrac_0_40
+│   │   │   │           │   ├── seed_2025
+│   │   │   │           │   ├── seed_2026
+│   │   │   │           │   ├── seed_2027
+│   │   │   │           │   ├── seed_2028
+│   │   │   │           │   └── seed_2029
+│   │   │   │           └── qtfrac_0_80
+│   │   │   │               ├── seed_2025
+│   │   │   │               ├── seed_2026
+│   │   │   │               ├── seed_2027
+│   │   │   │               ├── seed_2028
+│   │   │   │               └── seed_2029
+│   │   │   └── NN
+│   │   │       ├── trainratio_0_05
+│   │   │       │   └── struct
+│   │   │       │       └── qtfrac_0_00
+│   │   │       │           └── seed_2025
+│   │   │       ├── trainratio_0_20
+│   │   │       │   └── struct_with_input
+│   │   │       │       ├── qtfrac_0_00
+│   │   │       │       │   └── seed_2025
+│   │   │       │       └── qtfrac_0_01
+│   │   │       │           └── seed_2025
+│   │   │       └── trainratio_0_80
+│   │   │           ├── struct
+│   │   │           │   └── qtfrac_0_00
+│   │   │           │       └── seed_2025
+│   │   │           └── struct_with_input
+│   │   │               └── qtfrac_0_01
+│   │   │                   └── seed_2025
+│   │   ├── 0.01_to_15
+│   │   │   └── NN
+│   │   │       └── trainratio_0_40
+│   │   │           └── struct_with_input
+│   │   │               ├── qtfrac_0_00
+│   │   │               │   └── seed_2025
+│   │   │               └── qtfrac_0_40
+│   │   │                   └── seed_2025
+│   │   ├── HENRY_to_1
+│   │   │   └── CAT
+│   │   │       ├── trainratio_0_05
+│   │   │       │   └── struct_with_input
+│   │   │       │       ├── qtfrac_0_00
+│   │   │       │       │   └── seed_2028
+│   │   │       │       └── qtfrac_0_05
+│   │   │       │           └── seed_2028
+│   │   │       ├── trainratio_0_60
+│   │   │       │   └── struct_with_input
+│   │   │       │       ├── qtfrac_0_30
+│   │   │       │       │   └── seed_2028
+│   │   │       │       └── qtfrac_0_60
+│   │   │       │           └── seed_2028
+│   │   │       └── trainratio_0_70
+│   │   │           └── struct_with_input
+│   │   │               └── qtfrac_0_35
+│   │   │                   └── seed_2028
+│   │   └── HENRY_to_15
+│   │       └── CAT
+│   │           ├── trainratio_0_05
+│   │           │   └── struct_with_input
+│   │           │       ├── qtfrac_0_00
+│   │           │       │   └── seed_2028
+│   │           │       └── qtfrac_0_05
+│   │           │           └── seed_2028
+│   │           └── trainratio_0_20
+│   │               └── struct_with_input
+│   │                   ├── qtfrac_0_00
+│   │                   │   ├── seed_2025
+│   │                   │   ├── seed_2026
+│   │                   │   ├── seed_2027
+│   │                   │   ├── seed_2028
+│   │                   │   └── seed_2029
+│   │                   ├── qtfrac_0_10
+│   │                   │   ├── seed_2025
+│   │                   │   ├── seed_2026
+│   │                   │   ├── seed_2027
+│   │                   │   ├── seed_2028
+│   │                   │   └── seed_2029
+│   │                   └── qtfrac_0_20
+│   │                       ├── seed_2025
+│   │                       ├── seed_2026
+│   │                       ├── seed_2027
+│   │                       ├── seed_2028
+│   │                       └── seed_2029
+│   └── 293K
+│       ├── 0.01_to_1
+│       │   └── CAT
+│       │       ├── a.py
+│       │       ├── b.py
+│       │       ├── plot_MAE_mean.png
+│       │       ├── plot_MAPEpct_mean.png
+│       │       ├── plot_R2_mean.png
+│       │       ├── plot_RMSE_mean.png
+│       │       ├── summary_raw.csv
+│       │       ├── summary_stats.csv
+│       │       ├── trainratio_0_05
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_03
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_05
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_10
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_05
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_10
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_15
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_07
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_15
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_20
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_10
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_20
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_25
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_12
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_25
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_30
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_15
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_30
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_35
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_17
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_35
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_40
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_20
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_40
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_45
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_23
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_45
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_50
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_25
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_50
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_55
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_28
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_55
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_60
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_30
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_60
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_65
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_33
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_65
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_70
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_35
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_70
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_75
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_38
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_75
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       └── trainratio_0_80
+│       │           ├── struct
+│       │           │   └── qtfrac_0_00
+│       │           │       ├── seed_2025
+│       │           │       ├── seed_2026
+│       │           │       ├── seed_2027
+│       │           │       ├── seed_2028
+│       │           │       └── seed_2029
+│       │           └── struct_with_input
+│       │               ├── qtfrac_0_00
+│       │               │   ├── seed_2025
+│       │               │   ├── seed_2026
+│       │               │   ├── seed_2027
+│       │               │   ├── seed_2028
+│       │               │   └── seed_2029
+│       │               ├── qtfrac_0_40
+│       │               │   ├── seed_2025
+│       │               │   ├── seed_2026
+│       │               │   ├── seed_2027
+│       │               │   ├── seed_2028
+│       │               │   └── seed_2029
+│       │               └── qtfrac_0_80
+│       │                   ├── seed_2025
+│       │                   ├── seed_2026
+│       │                   ├── seed_2027
+│       │                   ├── seed_2028
+│       │                   └── seed_2029
+│       ├── 0.01_to_15
+│       │   └── CAT
+│       │       ├── a.py
+│       │       ├── b.py
+│       │       ├── plot_MAE_mean.png
+│       │       ├── plot_MAPEpct_mean.png
+│       │       ├── plot_R2_mean.png
+│       │       ├── plot_RMSE_mean.png
+│       │       ├── summary_raw.csv
+│       │       ├── summary_stats.csv
+│       │       ├── trainratio_0_05
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_03
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_05
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_10
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_05
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_10
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_15
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_07
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_15
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_20
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_10
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_20
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_25
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_12
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_25
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_30
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_15
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_30
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_35
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_17
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_35
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_40
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_20
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_40
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_45
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_23
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_45
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_50
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_25
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_50
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_55
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_28
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_55
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_60
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_30
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_60
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_65
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_33
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_65
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_70
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_35
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_70
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_75
+│       │       │   ├── struct
+│       │       │   │   └── qtfrac_0_00
+│       │       │   │       ├── seed_2025
+│       │       │   │       ├── seed_2026
+│       │       │   │       ├── seed_2027
+│       │       │   │       ├── seed_2028
+│       │       │   │       └── seed_2029
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_38
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_75
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       └── trainratio_0_80
+│       │           ├── struct
+│       │           │   └── qtfrac_0_00
+│       │           │       ├── seed_2025
+│       │           │       ├── seed_2026
+│       │           │       ├── seed_2027
+│       │           │       ├── seed_2028
+│       │           │       └── seed_2029
+│       │           └── struct_with_input
+│       │               ├── qtfrac_0_00
+│       │               │   ├── seed_2025
+│       │               │   ├── seed_2026
+│       │               │   ├── seed_2027
+│       │               │   ├── seed_2028
+│       │               │   └── seed_2029
+│       │               ├── qtfrac_0_40
+│       │               │   ├── seed_2025
+│       │               │   ├── seed_2026
+│       │               │   ├── seed_2027
+│       │               │   ├── seed_2028
+│       │               │   └── seed_2029
+│       │               └── qtfrac_0_80
+│       │                   ├── seed_2025
+│       │                   ├── seed_2026
+│       │                   ├── seed_2027
+│       │                   ├── seed_2028
+│       │                   └── seed_2029
+│       ├── 0.01_to_15_old
+│       │   └── CAT
+│       │       ├── 1.txt
+│       │       ├── a.py
+│       │       ├── b.py
+│       │       ├── plot_MAE_mean.png
+│       │       ├── plot_MAPEpct_mean.png
+│       │       ├── plot_R2_mean.png
+│       │       ├── plot_RMSE_mean.png
+│       │       ├── summary_raw.csv
+│       │       ├── summary_stats.csv
+│       │       ├── trainratio_0_05
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_03
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_05
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_10
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_05
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_10
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_15
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_07
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_15
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_20
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_10
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_20
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_25
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_12
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_25
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_30
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_15
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_30
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_35
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_17
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_35
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_40
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_20
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_40
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_45
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_23
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_45
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_50
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_25
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_50
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_55
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_28
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_55
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_60
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_30
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_60
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_65
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_33
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_65
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_70
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_35
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_70
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       ├── trainratio_0_75
+│       │       │   └── struct_with_input
+│       │       │       ├── qtfrac_0_00
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       ├── qtfrac_0_38
+│       │       │       │   ├── seed_2025
+│       │       │       │   ├── seed_2026
+│       │       │       │   ├── seed_2027
+│       │       │       │   ├── seed_2028
+│       │       │       │   └── seed_2029
+│       │       │       └── qtfrac_0_75
+│       │       │           ├── seed_2025
+│       │       │           ├── seed_2026
+│       │       │           ├── seed_2027
+│       │       │           ├── seed_2028
+│       │       │           └── seed_2029
+│       │       └── trainratio_0_80
+│       │           └── struct_with_input
+│       │               ├── qtfrac_0_00
+│       │               │   ├── seed_2025
+│       │               │   ├── seed_2026
+│       │               │   ├── seed_2027
+│       │               │   ├── seed_2028
+│       │               │   └── seed_2029
+│       │               ├── qtfrac_0_40
+│       │               │   ├── seed_2025
+│       │               │   ├── seed_2026
+│       │               │   ├── seed_2027
+│       │               │   ├── seed_2028
+│       │               │   └── seed_2029
+│       │               └── qtfrac_0_80
+│       │                   ├── seed_2025
+│       │                   ├── seed_2026
+│       │                   ├── seed_2027
+│       │                   ├── seed_2028
+│       │                   └── seed_2029
+│       └── 0.01_to_5
+│           └── CAT
+│               ├── a.py
+│               ├── b.py
+│               ├── plot_MAE_mean.png
+│               ├── plot_MAPEpct_mean.png
+│               ├── plot_R2_mean.png
+│               ├── plot_RMSE_mean.png
+│               ├── summary_raw.csv
+│               ├── summary_stats.csv
+│               ├── trainratio_0_05
+│               │   ├── struct
+│               │   │   └── qtfrac_0_00
+│               │   │       ├── seed_2025
+│               │   │       ├── seed_2026
+│               │   │       ├── seed_2027
+│               │   │       ├── seed_2028
+│               │   │       └── seed_2029
+│               │   └── struct_with_input
+│               │       ├── qtfrac_0_00
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       ├── qtfrac_0_03
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       └── qtfrac_0_05
+│               │           ├── seed_2025
+│               │           ├── seed_2026
+│               │           ├── seed_2027
+│               │           ├── seed_2028
+│               │           └── seed_2029
+│               ├── trainratio_0_10
+│               │   ├── struct
+│               │   │   └── qtfrac_0_00
+│               │   │       ├── seed_2025
+│               │   │       ├── seed_2026
+│               │   │       ├── seed_2027
+│               │   │       ├── seed_2028
+│               │   │       └── seed_2029
+│               │   └── struct_with_input
+│               │       ├── qtfrac_0_00
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       ├── qtfrac_0_05
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       └── qtfrac_0_10
+│               │           ├── seed_2025
+│               │           ├── seed_2026
+│               │           ├── seed_2027
+│               │           ├── seed_2028
+│               │           └── seed_2029
+│               ├── trainratio_0_15
+│               │   ├── struct
+│               │   │   └── qtfrac_0_00
+│               │   │       ├── seed_2025
+│               │   │       ├── seed_2026
+│               │   │       ├── seed_2027
+│               │   │       ├── seed_2028
+│               │   │       └── seed_2029
+│               │   └── struct_with_input
+│               │       ├── qtfrac_0_00
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       ├── qtfrac_0_07
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       └── qtfrac_0_15
+│               │           ├── seed_2025
+│               │           ├── seed_2026
+│               │           ├── seed_2027
+│               │           ├── seed_2028
+│               │           └── seed_2029
+│               ├── trainratio_0_20
+│               │   ├── struct
+│               │   │   └── qtfrac_0_00
+│               │   │       ├── seed_2025
+│               │   │       ├── seed_2026
+│               │   │       ├── seed_2027
+│               │   │       ├── seed_2028
+│               │   │       └── seed_2029
+│               │   └── struct_with_input
+│               │       ├── qtfrac_0_00
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       ├── qtfrac_0_10
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       └── qtfrac_0_20
+│               │           ├── seed_2025
+│               │           ├── seed_2026
+│               │           ├── seed_2027
+│               │           ├── seed_2028
+│               │           └── seed_2029
+│               ├── trainratio_0_25
+│               │   ├── struct
+│               │   │   └── qtfrac_0_00
+│               │   │       ├── seed_2025
+│               │   │       ├── seed_2026
+│               │   │       ├── seed_2027
+│               │   │       ├── seed_2028
+│               │   │       └── seed_2029
+│               │   └── struct_with_input
+│               │       ├── qtfrac_0_00
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       ├── qtfrac_0_12
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       └── qtfrac_0_25
+│               │           ├── seed_2025
+│               │           ├── seed_2026
+│               │           ├── seed_2027
+│               │           ├── seed_2028
+│               │           └── seed_2029
+│               ├── trainratio_0_30
+│               │   ├── struct
+│               │   │   └── qtfrac_0_00
+│               │   │       ├── seed_2025
+│               │   │       ├── seed_2026
+│               │   │       ├── seed_2027
+│               │   │       ├── seed_2028
+│               │   │       └── seed_2029
+│               │   └── struct_with_input
+│               │       ├── qtfrac_0_00
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       ├── qtfrac_0_15
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       └── qtfrac_0_30
+│               │           ├── seed_2025
+│               │           ├── seed_2026
+│               │           ├── seed_2027
+│               │           ├── seed_2028
+│               │           └── seed_2029
+│               ├── trainratio_0_35
+│               │   ├── struct
+│               │   │   └── qtfrac_0_00
+│               │   │       ├── seed_2025
+│               │   │       ├── seed_2026
+│               │   │       ├── seed_2027
+│               │   │       ├── seed_2028
+│               │   │       └── seed_2029
+│               │   └── struct_with_input
+│               │       ├── qtfrac_0_00
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       ├── qtfrac_0_17
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       └── qtfrac_0_35
+│               │           ├── seed_2025
+│               │           ├── seed_2026
+│               │           ├── seed_2027
+│               │           ├── seed_2028
+│               │           └── seed_2029
+│               ├── trainratio_0_40
+│               │   ├── struct
+│               │   │   └── qtfrac_0_00
+│               │   │       ├── seed_2025
+│               │   │       ├── seed_2026
+│               │   │       ├── seed_2027
+│               │   │       ├── seed_2028
+│               │   │       └── seed_2029
+│               │   └── struct_with_input
+│               │       ├── qtfrac_0_00
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       ├── qtfrac_0_20
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       └── qtfrac_0_40
+│               │           ├── seed_2025
+│               │           ├── seed_2026
+│               │           ├── seed_2027
+│               │           ├── seed_2028
+│               │           └── seed_2029
+│               ├── trainratio_0_45
+│               │   ├── struct
+│               │   │   └── qtfrac_0_00
+│               │   │       ├── seed_2025
+│               │   │       ├── seed_2026
+│               │   │       ├── seed_2027
+│               │   │       ├── seed_2028
+│               │   │       └── seed_2029
+│               │   └── struct_with_input
+│               │       ├── qtfrac_0_00
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       ├── qtfrac_0_23
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       └── qtfrac_0_45
+│               │           ├── seed_2025
+│               │           ├── seed_2026
+│               │           ├── seed_2027
+│               │           ├── seed_2028
+│               │           └── seed_2029
+│               ├── trainratio_0_50
+│               │   ├── struct
+│               │   │   └── qtfrac_0_00
+│               │   │       ├── seed_2025
+│               │   │       ├── seed_2026
+│               │   │       ├── seed_2027
+│               │   │       ├── seed_2028
+│               │   │       └── seed_2029
+│               │   └── struct_with_input
+│               │       ├── qtfrac_0_00
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       ├── qtfrac_0_25
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       └── qtfrac_0_50
+│               │           ├── seed_2025
+│               │           ├── seed_2026
+│               │           ├── seed_2027
+│               │           ├── seed_2028
+│               │           └── seed_2029
+│               ├── trainratio_0_55
+│               │   ├── struct
+│               │   │   └── qtfrac_0_00
+│               │   │       ├── seed_2025
+│               │   │       ├── seed_2026
+│               │   │       ├── seed_2027
+│               │   │       ├── seed_2028
+│               │   │       └── seed_2029
+│               │   └── struct_with_input
+│               │       ├── qtfrac_0_00
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       ├── qtfrac_0_28
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       └── qtfrac_0_55
+│               │           ├── seed_2025
+│               │           ├── seed_2026
+│               │           ├── seed_2027
+│               │           ├── seed_2028
+│               │           └── seed_2029
+│               ├── trainratio_0_60
+│               │   ├── struct
+│               │   │   └── qtfrac_0_00
+│               │   │       ├── seed_2025
+│               │   │       ├── seed_2026
+│               │   │       ├── seed_2027
+│               │   │       ├── seed_2028
+│               │   │       └── seed_2029
+│               │   └── struct_with_input
+│               │       ├── qtfrac_0_00
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       ├── qtfrac_0_30
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       └── qtfrac_0_60
+│               │           ├── seed_2025
+│               │           ├── seed_2026
+│               │           ├── seed_2027
+│               │           ├── seed_2028
+│               │           └── seed_2029
+│               ├── trainratio_0_65
+│               │   ├── struct
+│               │   │   └── qtfrac_0_00
+│               │   │       ├── seed_2025
+│               │   │       ├── seed_2026
+│               │   │       ├── seed_2027
+│               │   │       ├── seed_2028
+│               │   │       └── seed_2029
+│               │   └── struct_with_input
+│               │       ├── qtfrac_0_00
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       ├── qtfrac_0_33
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       └── qtfrac_0_65
+│               │           ├── seed_2025
+│               │           ├── seed_2026
+│               │           ├── seed_2027
+│               │           ├── seed_2028
+│               │           └── seed_2029
+│               ├── trainratio_0_70
+│               │   ├── struct
+│               │   │   └── qtfrac_0_00
+│               │   │       ├── seed_2025
+│               │   │       ├── seed_2026
+│               │   │       ├── seed_2027
+│               │   │       ├── seed_2028
+│               │   │       └── seed_2029
+│               │   └── struct_with_input
+│               │       ├── qtfrac_0_00
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       ├── qtfrac_0_35
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       └── qtfrac_0_70
+│               │           ├── seed_2025
+│               │           ├── seed_2026
+│               │           ├── seed_2027
+│               │           ├── seed_2028
+│               │           └── seed_2029
+│               ├── trainratio_0_75
+│               │   ├── struct
+│               │   │   └── qtfrac_0_00
+│               │   │       ├── seed_2025
+│               │   │       ├── seed_2026
+│               │   │       ├── seed_2027
+│               │   │       ├── seed_2028
+│               │   │       └── seed_2029
+│               │   └── struct_with_input
+│               │       ├── qtfrac_0_00
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       ├── qtfrac_0_38
+│               │       │   ├── seed_2025
+│               │       │   ├── seed_2026
+│               │       │   ├── seed_2027
+│               │       │   ├── seed_2028
+│               │       │   └── seed_2029
+│               │       └── qtfrac_0_75
+│               │           ├── seed_2025
+│               │           ├── seed_2026
+│               │           ├── seed_2027
+│               │           ├── seed_2028
+│               │           └── seed_2029
+│               └── trainratio_0_80
+│                   ├── struct
+│                   │   └── qtfrac_0_00
+│                   │       ├── seed_2025
+│                   │       ├── seed_2026
+│                   │       ├── seed_2027
+│                   │       ├── seed_2028
+│                   │       └── seed_2029
+│                   └── struct_with_input
+│                       ├── qtfrac_0_00
+│                       │   ├── seed_2025
+│                       │   ├── seed_2026
+│                       │   ├── seed_2027
+│                       │   ├── seed_2028
+│                       │   └── seed_2029
+│                       ├── qtfrac_0_40
+│                       │   ├── seed_2025
+│                       │   ├── seed_2026
+│                       │   ├── seed_2027
+│                       │   ├── seed_2028
+│                       │   └── seed_2029
+│                       └── qtfrac_0_80
+│                           ├── seed_2025
+│                           ├── seed_2026
+│                           ├── seed_2027
+│                           ├── seed_2028
+│                           └── seed_2029
+├── run.parallel.py
+├── SPLIT_COMMANDS
+│   ├── commands_part_1.txt
+│   ├── commands_part_2.txt
+│   ├── commands_part_3.txt
+│   ├── commands_part_4.txt
+│   └── commands_part_5.txt
+└── split.commands.py
+
+2138 directories, 110 files

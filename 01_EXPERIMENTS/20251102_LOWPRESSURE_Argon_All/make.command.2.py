@@ -1,8 +1,8 @@
 import itertools
 
-temps = ["273K"]
+temps = ["293K"]
 lowp_list = ["0.01"]
-outp_list = ["1"]
+outp_list = ["5"]
 seeds = [2025, 2026, 2027, 2028, 2029]
 modes = ["struct", "struct_with_input"]
 train_ratios = [i / 20 for i in range(1, 17)]  # 0.05 ~ 0.80 step 0.05
